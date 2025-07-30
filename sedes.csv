@@ -1,0 +1,595 @@
+﻿Id;Nombre;"Tipo de sede";Provincia;Localidad;Dirección;Web;"Cantidad salones";"Cantidad pabellones";"Metros cuadrados cubiertos";"Metros cuadrados descubiertos";"Capacidad maxima auditorio";"Capacidad maxima escuela";"Capacidad maxima recepcion";"Capacidad maxima banquete";"Sede registrada oficialmente";"Fecha de baja";Latlon;"Recurso sostenibilidad agua";"Recurso sostenibilidad energia";"Recurso sostenibilidad residuos";"¿Cuál otra?";"Certificacion ambiental";¿Cuál?;"¿Cuál otra?";"Responsabilidad social";"Condicion accesibilidad universal";"¿Cuál otra?";"Condicion accesibilidad sensorial";"¿Cuál otra?";"Personal conocimiento lengua senias"
+4;"Universidad del Aconcagua";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9;"Universidad Nacional de Cuyo (UNCUYO)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;": Centro Universitario, Parque General San Martín s/n";http://www.uncuyo.edu.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+10;"Centro de Congresos y Exposiciones Francisco";"Centro de Convenciones";Mendoza;"CIUDAD DE SAN MARTIN";"ciudad de San Martin";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+11;"Hotel Intercontinental Mendoza Guaymallen";Hotel;Mendoza;MENDOZA;"Pérez Cuesta, Mendoza";;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+16;"Universidad de Mendoza (UM)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;"Av. Boulogne Sur Mer 683, 5500 Mendoza";http://www.um.edu.ar/es/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+18;"Nave Cultural";"Centro Cultural";Mendoza;MENDOZA;"España Gran, Vendimiadores, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+21;"Auditorio Ángel Bustelo";Auditorio/Sala;Mendoza;MENDOZA;"Av. Peltier 611, 5500 Capital, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+29;"Secretaría de Cultura de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;"España y Gutiérrez";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+30;"Hotel (DADO DE BAJA)";Hotel;Mendoza;GUAYMALLEN;"boulevard Pérez Cuesta esquina acceso Este";;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+31;"Universidad de Congreso (UC)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;http://www.icomos.org.ar/blog/2017/08/09/vi-congreso-internacional-de-historia-ferroviaria/;http://www.ucongreso.edu.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+46;"Campus Dr. Manuel Belgrano";Otro;Mendoza;"GODOY CRUZ";"1 de Mayo 1951-1999 Godoy Cruz Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+48;"Biblioteca Pública General San Martín";"Centro Cultural";Mendoza;MENDOZA;"Av. San Martín 1843, 5500 Mendoza";http://www.cultura.mendoza.gov.ar/bpgsm/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+50;"Universidad Juan Agustín Maza";"Universidad/Centro de Estudio";Mendoza;"LAS CAÑAS";"Lateral Sur del Acceso Este 2245, 5519, Mendoza";http://www.umaza.edu.ar/index.php;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+94;"InterContinental Mendoza";Hotel;Mendoza;MENDOZA;"Pérez Cuesta, Mendoza";http://www.intercontinentalmendoza.com;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+95;"Teatro Independencia";Teatro/Cine;Mendoza;MENDOZA;"Chile 1754, M5500GRM Mendoza";http://www.cultura.mendoza.gov.ar/teatroindependencia/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+97;montemar;Otro;Mendoza;MENDOZA;"Mendoza Plaza Shopping, Acceso Este 3280, 5521 Mendoza";http://www.montemar.com.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+99;"Obra Social de los Empleados Públicos (OSEP)";Auditorio/Sala;Mendoza;MENDOZA;"Av. José Vicente Zapata 313, 5500 Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+103;"Julio LeParc";"Centro Cultural";Mendoza;MENDOZA;"Mitre y Godoy Cruz,, Mitre S/N, 5519 Mendoza";http://www.julioleparc.org/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+129;"Universidad Nacional de Cuyo (UNCUYO) (baja)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;2019-11-19;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+971;"Hotel Termas de Cacheuta";Hotel;Mendoza;CACHEUTA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1062;"Bodega Faraón";"Bodega/Restaurante/Club Nocturno";Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1063;"Cabañas Don Aniceto";"Establecimiento Rural";Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1064;"Cámara de Comercio de General Alverar";Auditorio/Sala;Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1065;"Casa de la Cultura";"Centro Cultural";Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1066;"Centro de Congresos y Exposiciones";"Centro de Convenciones";Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1067;"Instituto San Antonio";"Universidad/Centro de Estudio";Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1068;"Polideportivo Municipal Deportistas Alvearenses";"Club/Centro Deportivo";Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1069;"Predio ferial de General Alvear";"Predio Ferial";Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1070;"Salón Patricias Mendocinas";Auditorio/Sala;Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1074;"Casa de la Cultura de San Martín";"Centro Cultural";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1075;"Casa España de San Martín";Auditorio/Sala;Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1076;"Centro de Congresos y Exposiciones San Martín";"Centro de Convenciones";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1077;"Estadio Gustavo Torito Rodríguez";Estadio;Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1078;"Instituto de Educación Superior (IES) 9-001";"Universidad/Centro de Estudio";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1079;"Parque Agnesi de San Martín";"Aire libre";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1080;"Polideportivo Municipal Torito Rodriguez";"Club/Centro Deportivo";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1081;"Universidad Nacional de Cuyo (UNCUYO)";"Universidad/Centro de Estudio";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1651;"Teatro Plaza";Teatro/Cine;Mendoza;"GODOY CRUZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1727;"Salón Cultural Cervantes";Auditorio/Sala;Mendoza;JUNIN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1728;"Universidad Nacional del Noroeste de Buenos Aires (UNNOBA) - Sede Junín";"Universidad/Centro de Estudio";Mendoza;JUNIN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1772;"Albergue Municipal Osvaldo Pinto";Auditorio/Sala;Mendoza;"LA PAZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1773;"Club Juventud Unida";"Club/Centro Deportivo";Mendoza;"LA PAZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1774;"Estadio Juan Domingo Perón";Estadio;Mendoza;"LA PAZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1775;"Instituto de Educación Superior (IES) 9-005 Fidela Amparán";"Universidad/Centro de Estudio";Mendoza;"LA PAZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1776;"Municipalidad de La Paz";Auditorio/Sala;Mendoza;"LA PAZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1777;"Predio Ferial Agro-Ganadero en La Paz";"Predio Ferial";Mendoza;"LA PAZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1907;"Hostel Portozuelo del viento";Hotel;Mendoza;"LAS CUEVAS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1948;"Club Cultural Chacras";"Centro Cultural";Mendoza;"LUJAN DE CUYO";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1949;"Gran Hotel Potrerillos";Hotel;Mendoza;POTRERILLOS;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1950;"Casa de retiros de Lunlunta";Auditorio/Sala;Mendoza;LUNLUNTA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1956;"Arena Maipú";Casino;Mendoza;MAIPU;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1957;"Bodegas Baudron";"Bodega/Restaurante/Club Nocturno";Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1958;"Universidad Juan Agustín Maza";"Universidad/Centro de Estudio";Mendoza;MAIPU;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1962;"Centro Cultural y Deportivo Malal Hue";"Centro Cultural";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1963;"Centro de Convenciones y Exposiciones Thesaurus";"Centro de Convenciones";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1964;"Centro de Desarrollo Infantil y Familiar (CDyF) N°2";"Universidad/Centro de Estudio";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1965;"Club Deportivo Malargue";"Club/Centro Deportivo";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1966;"Escuelas Aborigen Americano";"Universidad/Centro de Estudio";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1967;"Hotel Bonarda";Hotel;Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1968;"Municipalidad de Malargüe";Auditorio/Sala;Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1969;"Observatorio Pierre Auger";"Universidad/Centro de Estudio";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1970;"Parque del Ayer";"Aire libre";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1971;"Polideportivo Municipal";"Club/Centro Deportivo";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1972;"Universidad de Mendoza (UM)";"Universidad/Centro de Estudio";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1973;"Universidad del Aconcagua Malargue";"Universidad/Centro de Estudio";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+1974;"Universidad Tecnológica Nacional (UTN) - Facultad Regional Mendoza";"Universidad/Centro de Estudio";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2226;"Aeródromo Aerotec";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2227;"Aire libre";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2228;"Algodon Mansion";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2229;"Andesmar Turismo";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2230;"Anfiteatro Este";Teatro/Cine;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2231;"Apart Hotel Montanas Azules";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2232;"Arena Maipú Casino Resort";Casino;Mendoza;MAIPU;"Emilio Civit 792";https://www.arenamaipu.com.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2233;"Asociación Ganadera del Centro";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2234;"Asosiación de Trabajadores de la Sanidad Argentina (ATSA)";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2235;"Auditorio  COPIG";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2236;"Auditorio Adolfo Calle";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2237;"Auditorio Luis Triviño";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2238;"Biblioteca Popular Mariano Moreno";Biblioteca;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2239;"Biblioteca y Mediateca Pública Municipal Manuel Belgrano";Biblioteca;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2240;"Bodega del 91";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2241;"Bodega diamAndes";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2242;"Bodega Lopez";"Bodega/Restaurante/Club Nocturno";Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2243;"Bodega Los Toneles";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2244;"Cámara Argentina de la Construcción (CAC)";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2245;"Camping Colegio Notarial Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2246;"Camping Recreo Luz y Fuerza de Mendoza";Otro;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2247;"Casa de Gobierno de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2248;"Casa de la Historia y la Cultura del Bicentenario";"Centro Cultural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2249;"Casa de la Historia y la Cultura Juanita Vera";"Centro Cultural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2250;"Casa de la Palmera";"Centro Cultural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2251;"Casa de la Salud de la Mujer";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2252;"Casino Enjoy";Casino;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2253;"Cavas de Giol";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2254;"Instituto Nacional de Vitivinicultura INV";Auditorio/Sala;Mendoza;MENDOZA;"Av. San Martín 430";http://www.inv.gov.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2255;"centro astuariano Godoy cruz";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2256;"Centro Científico Tecnológico Mendoza (CCT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2257;"Centro Cívico de San Carlos";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2258;"Centro Cultural Cine Teatro Plaza";"Centro Cultural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2259;"Centro de Congresos y Exposiciones Carlos Alonso de Tunuyán";"Centro de Convenciones";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2260;"Centro de Congresos y Exposiciones de San Rafael";"Centro de Convenciones";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2261;"Centro de Congresos y Exposiciones Gobernador Emilio Civit";"Centro de Convenciones";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2262;"Centro de Congresos y Exposiciones San Martín";"Centro de Convenciones";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2263;"Centro de Empleados de Comercio (CEC)";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2264;"Centro de eventos Palatium";"Salón/Casa de Eventos";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2265;"Centro de Información y Comunicación de la Universidad Nacional de Cuyo (CICUNC)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2266;"Centro de Integración Comunitaria (CIC) del barrio Paraguay";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2267;"Centro de Salud Nº28 Dr. Maurín Navarro";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2268;"Centro de Yoga Acuarius";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2269;"Cerro Aconcagua";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2270;"Cine Imperial";Teatro/Cine;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2271;"Cine Teatro Plaza de Godoy Cruz";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2272;"Círculo Médico de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2273;"Colegio de Abogados y Procuradores de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2274;"Colegio de Arquitectos";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2275;"Colegio Universitario Central (CUC)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2276;"Comisión Nacional de Energía Atómica - Regional Cuyo";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2277;"Complejo Deportivo Juan Alberti";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2278;"Consejo Profesional de Ciencias Económicas ";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2279;"Consejo Profesional de Ingenieros y Geólogos de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2280;"Cordillera de Los Andes";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2281;"DGE Educación de Nivel Primario";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2282;"Dique Potrerillos";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2283;"Dirección General de Atención Primaria";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2284;"Dirección General de Relaciones Económicas Internacionales";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2285;"DNRPA MENDOZA";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2286;"Edificio de Enseñanza";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2287;"Edificio Xeltahuina";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2288;"El Refugio";"Salón/Casa de Eventos";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2289;"Emilio Descotte";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2290;"Enrico Tedeschi";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2291;"Escuela Argentina de Sommeliers (EAS) ";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2292;"Escuela Cinematográfica Argentina (ECA)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2293;"escuela de capacitación Escoop";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2294;"Escuela Hogar Eva Perón";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2295;"Escuela Lemos";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2296;"Escuela N° 4-001 ";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2297;"Escuela N° 4-106 IV Brigada Aérea";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2298;"Escuela Pablo Nogués";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2299;"Escuela Valentín Bonetti de Godoy Cruz";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2300;"Espacio Cultural Julio Le Parc";"Centro Cultural";Mendoza;GUAYMALLEN;"Mitre y Godoy Cruz, Av. Mitre";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2301;"Espacio de la Ciencia y la Tecnología (UNCuyo)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2302;"Espacio Verde Luis Menotti Pescarmona";"Predio Ferial";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2303;"Estadio Cubierto Dr. Vicente Polimeni";Estadio;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2304;"Estadio Malvinas Argentinas";Estadio;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2305;"Estadio Mendocino de Hockey sobre Césped";Estadio;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2306;"Estadio Polimeni de Las Heras";Estadio;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2307;"Estadio Vicente Polimeni";Estadio;Mendoza;"LAS HERAS";"Roca 401, Las Heras";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2308;"Federación de Cooperativas Vitivinícolas";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2309;"Fundación ProMendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2310;"Gimnasio Municipal Nº 3";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2311;"Golf Club Andino";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2312;"Grado de la Universidad";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2313;"Hospital Carlos Pereyra";"Hospital/Centro Médico";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2314;"Hospital Central de Mendoza";"Hospital/Centro Médico";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2315;"Hospital Dr. H. Notti";"Hospital/Centro Médico";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2316;"Hospital Lagiomagionre";"Hospital/Centro Médico";Mendoza;MENDOZA;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2317;"Hospital Universitario Mendoza";"Hospital/Centro Médico";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2318;"Hotel Argentino";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2319;"Hotel de Turismo de Tupungato";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2320;"Hotel Diplomatic Mendoza";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2321;"Esplendor Hotel";Hotel;Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2322;"Hotel Huentala";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2323;"Hotel Mod";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2324;"Hotel Montañas Azules";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2325;"Hotel NH Cordillera";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2326;"Hotel Park Hyatt Mendoza";Hotel;Mendoza;MENDOZA;"Chile 1124";https://mendoza.park.hyatt.com/en/hotel/home.html;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2327;"Hotel Pasambay";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2328;"Hotel Premium Tower";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2329;"Hotel Raíces Aconcagua";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2330;"Hotel Savoia";Hotel;Mendoza;GUAYMALLEN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2331;"Hotel Sheraton Mendoza";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2332;"Hotel Svaoia";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2333;"Hotel Tower Mendoza ";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2334;"Hotel Villa Mansa";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2335;"Instituto de Desarrollo Industrial, Tecnológico y de Servicios (IDITS)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2336;"Instituto de Educación Superior (IES) 9-002";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2337;"Instituto de Educación Superior (IES) 1-664";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2338;"Instituto de Histología y Embriología";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2339;"Instituto de Medicina y Biología Experimental de Cuyo";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2340;"Instituto Maipú de Educación Integral (IMEI)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2341;"Instituto Murialdo";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2342;"Instituto Nacional de Tecnología Agropecuaria (INTA) - Mendoza Estación Experimental Agropecuaria (EEA)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2343;"Instituto Nacional de Vitivinicultura";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2344;"Instituto Panamericano de Derecho Procesal";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2345;"Instituto Rodeo del Medio";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2346;"Instituto Superior Tecnológico ";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2347;"Instituto Universitario de Seguridad Pública";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2348;"Instituto Universitario Nacional del Arte";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2349;"ISTEEC CENTRAL";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2350;"Jardín Zoológico de Mendoza";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2352;"Junta de Estudios Históricos de Mendoza";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2353;"KIAM-TE Cacheuta";"Establecimiento Rural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2354;"La Barraca Mall";"Shopping/Centro Comercial";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2355;"La Enoteca";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2356;"La Escuela de Negocios";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2357;"Liceo Agrícola";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2358;"Mediateca Manuel Belgrano";Biblioteca;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2359;"Mendoza TIC Parque Tecnológico";"Predio Ferial";Mendoza;"GODOY CRUZ";"Rafael Cubillos 2100-2198";http://www.idits.org.ar/;;;;;;;;;;;-32.9397647,-68.8199537;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2360;"Microcine de Capital";Teatro/Cine;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2361;"Ministerio de Cultura";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2362;"Municipalidad de Godoy cruz";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2363;"Municipalidad de Las Heras";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2364;"Museo de Arte Moderno";Museo;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2365;"Museo de la Educación de Mendoza";Museo;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2366;"Museo del Vino";Museo;Mendoza;MENDOZA;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2367;"Museo Fader";Museo;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2368;"Museo Municipal de Arte Moderno de Mendoza (MMAMM)";Museo;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2369;"Museo Regional Americanista";Museo;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2370;"myriam belfer";"Centro Cultural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2371;"OSDE Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2372;"Parque Central";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2373;"Parque de estudio";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2374;"Parque General San Martín";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2375;"Parque Metroplitano";"Aire libre";Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2376;"Parque Raúl Alfonsín de Godoy Cruz";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2377;"Parque San Vicente Godoy Cruz";"Aire libre";Mendoza;"GODOY CRUZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2378;"Parroquia Espíritu Santo";"Casa Religiosa/Iglesia";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2379;"Paseo Estación Cultural Ciudad";"Centro Cultural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2380;"Paseo las Tipas";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2381;"Paseo Villalonga";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2382;"Plaza de Chacras";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2383;"Plaza Independencia";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2384;"Polideportivo Municipal";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2385;"Polideportivo Nicolino Locche";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2386;"Polideportivo Vicente Polimeni";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2387;"Portal Alameda";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2388;"Punta de Vaca";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2389;"Rotary Club Dorrego";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2390;"Salón de los Pasos Perdidos de la Legislatura";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2391;"salón El Refugio";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2392;"Salón Gran Milazzo";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2393;"Salón Malvinas";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2394;"Santa Cecilia";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2395;"Sebastián Elías";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2396;"Secretaría de Relaciones Internacionales e Integración Regional";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2397;"Sindicato Luz y Fuerza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2398;"Sociedad Española de Tunuyán";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2399;"Sociedad Psicoanalitica de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2400;"Sofía Dalvian";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2401;"Tabrnaculo de la Fe";"Casa Religiosa/Iglesia";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2402;"Teatro Gabriela Mistral";Teatro/Cine;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2403;"Teatro Imperial";Teatro/Cine;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2405;TMX;Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2406;"Unidad Ejecutiva de Seguridad Vial";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2407;"Unión Comercial e Industrial de Mendoza (UCIM)";Auditorio/Sala;Mendoza;MENDOZA;"Patricias Mendocinas 1157, 5500 Mendoza";http://ucim.org.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2408;"Universidad Champagnat";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2409;"Universidad de Mendoza (UM) - Facultad de Ciencias de la Salud";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2410;"Universidad Juan Agustín Maza";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2411;"Universidad Nacional de Cuyo (UNCUYO) (de baja)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;2019-11-19;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2412;"Universidad Nacional de Cuyo (UNCUYO) - Centro de Información y Comunicación";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2413;"Universidad Nacional de Cuyo (UNCUYO) - Comedor Universitario";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2414;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Arquitectura, Urbanismo y Diseño ";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2415;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Artes y Diseño";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2416;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Agrarias";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2417;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Agrarias (de baja)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;2019-11-19;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2418;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Aplicadas a la Industria";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2419;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Económicas";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2420;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Exactas y Naturales (FCEN)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2421;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Jurídicas y Sociales";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2422;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Médicas";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2423;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Políticas";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2424;"Universidad Nacional de Cuyo (UNCUYO) - Club de Deportes";"Club/Centro Deportivo";Mendoza;MENDOZA;"Centro Universitario. Parque General San Martín";http://deportes.uncuyo.edu.ar/;;;;;;;;;;;-32.8806728,-68.8816192;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2425;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Derecho";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2426;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Educación Elemental y Especial";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2427;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Filosofía y Letras";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2428;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ingeniería";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2429;"Universidad Nacional de Cuyo (FO UNCUYO) - Facultad de Odontología";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2430;"Universidad Tecnológica Nacional (UTN) - Facultad Regional Mendoza";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2431;"Univesidad de Mendoza";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2432;"Velódromo Provincial";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2433;"Villa deportiva";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3029;"Hotel Pasambay";Hotel;Mendoza;RIVADAVIA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3030;"Instituto de Formación Docente y Técnica 9-006 Profesor Francisco Humberto Tolosa";"Universidad/Centro de Estudio";Mendoza;RIVADAVIA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3031;"Plaza Bernardino Rivadavia";"Aire libre";Mendoza;RIVADAVIA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3032;"Polideportivo Municipal";"Club/Centro Deportivo";Mendoza;RIVADAVIA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3033;"Teatro Luis E. Bianchi";Teatro/Cine;Mendoza;RIVADAVIA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3481;"Asociación Ganadera del Centro";Auditorio/Sala;Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3482;"Camping San Carlos";Otro;Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3483;"Hotel de Turismo de Tupungato";Hotel;Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3484;"Instituto de Educación Superior (IES) 9-010 Rosario Vera Peñaloza";"Universidad/Centro de Estudio";Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3485;"Instituto de Educación Superior (IES) 9-015";"Universidad/Centro de Estudio";Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3486;"Instituto Nacional de Tecnología Agropecuaria (INTA) - San Carlos Estación Experimental Agropecuaria (EEA)";"Universidad/Centro de Estudio";Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3487;"Predo ferial Pareditas";"Predio Ferial";Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3488;"Unión Vecinal La Consulta";Auditorio/Sala;Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3801;"Alto del Algarrobal";"Predio Ferial";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3802;"Biblioteca Popular Mariano Moreno";Biblioteca;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3803;Camping;Otro;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3804;"Camping del Club de Pescadore";Otro;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3805;"Centro de Congresos y Exposiciones Alfredo Bufano";"Centro de Convenciones";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3806;"Centro de Congresos y Exposiciones de San Rafael";"Centro de Convenciones";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3807;"Centro de Información y Comunicación de la Universidad Nacional de Cuyo (CICUNC)";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3808;"Centro integrador comuintario Semillas de Cambio de San Rafael";Auditorio/Sala;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3809;"Centro Tecnológico de Desarrollo Regional (CTDR)";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3810;"Colegio del Carmen san Rafael";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3811;"Consejo Deliberante del municipo de San Rafael";Auditorio/Sala;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3812;"Escuela Normal Mixta";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3813;"Fabio Tarántola";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3814;"Fundación San Rafael de Corazón";Auditorio/Sala;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3815;"Hotel & Resort Valle Grande";Hotel;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3816;"Hotel Tower Mendoza ";Hotel;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3817;"Instituto de Educación Superior (IES) 9-012";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3818;"Lago El Nihuil ";"Aire libre";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3819;"Los Reyunos";Hotel;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3820;Multiespacio;Auditorio/Sala;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3821;"Museo de Historia Natural de San Rafael";Museo;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3822;"Parque Hipólito Yrigoyen";"Aire libre";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3823;"Universidad de Mendoza (UM)";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3824;"Universidad Nacional de Cuyo (UNCUYO)";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3825;"Universidad Nacional de Cuyo (UNCUYO) - Facultad de Ciencias Aplicadas a la Industria";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+3826;"Universidad Tecnológica Nacional (UTN) - Facultad Regional San Rafael";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4045;"Club Eliseo Ortiz";"Club/Centro Deportivo";Mendoza;"SANTA ROSA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4046;"Instituto de Educación Superior (IES) 9-028 Profesor Estela Suana Quiroga";"Universidad/Centro de Estudio";Mendoza;"SANTA ROSA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4047;"Salón municipal Villa Cabecera";Auditorio/Sala;Mendoza;"SANTA ROSA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4238;"Aire libre";"Aire libre";Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4239;"Albergue Municipal de Tunuyán";Auditorio/Sala;Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4240;"Bodega Salentein";"Bodega/Restaurante/Club Nocturno";Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4241;"Centro de Congresos y Exposiciones Carlos Alonso de Tunuyán";"Centro de Convenciones";Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4242;"Federación de Entidades no Gubernamentales de Niñez y Adolescencia (FEDEM)";Auditorio/Sala;Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4243;"Hospital Regional Antonio J. Scaravelli";"Hospital/Centro Médico";Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4244;"Hotel Fuente Mayor";Hotel;Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4245;"Instituto de Educación Superior (IES) 9-010 Rosario Vera Peñaloza";"Universidad/Centro de Estudio";Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4246;"Partido Justicialista";Auditorio/Sala;Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4247;"Plaza departamental Tunuyán";"Aire libre";Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4248;"Polideportivo Municipal";"Club/Centro Deportivo";Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4249;"Tiro Club Sportivo Tunuyán";"Club/Centro Deportivo";Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4250;"Bodega Atamisque";"Bodega/Restaurante/Club Nocturno";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4251;"Centro Regional Universitario Tupungato";"Universidad/Centro de Estudio";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4252;"Colegio Santísimo Rosario";"Universidad/Centro de Estudio";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4253;"Hotel de Turismo de Tupungato";Hotel;Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4254;"REPETIDO USAR EL OTRO Instituto de Educación Superior (IES)";"Universidad/Centro de Estudio";Mendoza;TUPUNGATO;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4255;"Instituto de Educación Superior (IES) 9-009";"Universidad/Centro de Estudio";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4470;"Casa de la Historia y la Cultura Juanita Vera";"Centro Cultural";Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4471;"Centro de Educación e Investigación Lavalle";"Universidad/Centro de Estudio";Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4472;"REPETIDO. USAR EL OTRO. Instituto de Educación Superior (IES)";"Universidad/Centro de Estudio";Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4473;"Instituto de Educación Superior (IES) 2-019 Dr. Domingo Sicoli";"Universidad/Centro de Estudio";Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4474;"Instituto de Educación Superior (IES) 9-024 Lavalle";"Universidad/Centro de Estudio";Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4475;"Municipalidad de Lavalle";Auditorio/Sala;Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4476;"Polideportivo Municipal";"Club/Centro Deportivo";Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4507;"Bodega La Rural";"Bodega/Restaurante/Club Nocturno";Mendoza;COQUIMBITO;"Monte Caseros 2625, 5522 Coquimbito, Mendoza";http://bodegalarural.com.ar/home/;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4508;"Bodega La Rural";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;"Monte Caseros 2625, 5522 Coquimbito, Mendoza";http://bodegalarural.com.ar/home/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4509;"Dr. Adolfo Calle de Diario Los Andes";"Hospital/Centro Médico";Mendoza;MENDOZA;"Adolfo Calle 450, 5519 Dorrego, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4511;"MUSEO NACIONAL DEL VINO Y LA VENDIMIA";Museo;Mendoza;MAIPU;"Ozamis 914, 5515 Maipú, Mendoza";;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4512;"MUSEO NACIONAL DEL VINO Y LA VENDIMIA";Museo;Mendoza;MENDOZA;"Ozamis 914, 5515 Maipú, Mendoza";;;;;;;;;;;2022-12-25;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4515;"hotel hyatt mendoza";Hotel;Mendoza;MENDOZA;"Chile 1124, 5500 Mendoza";https://mendoza.park.hyatt.com/en/hotel/home.html;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4524;"Hotel Intercontinental Mendoza";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4759;"UNIVERSIDAD MAZA";"Universidad/Centro de Estudio";Mendoza;"LAS CAÑAS";"Lateral Sur del Acceso Este 2245, 5519, Mendoza";www.umaza.edu.ar/;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4780;"bodega chakana";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4820;"INTA Tunuyán";Auditorio/Sala;Mendoza;TUNUYAN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4821;"Municipalidad de Tupungato";"Aire libre";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4822;Potrerillos;"Aire libre";Mendoza;POTRERILLOS;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4823;Villavicencio;"Aire libre";Mendoza;VILLAVICENCIO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4889;"UTN FACULTAD REGIONA  DE SAN RAFAEL";"Universidad/Centro de Estudio";Mendoza;"ARISTIDES VILLANUEVA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4967;"Parque Aconcagua";"Aire libre";Mendoza;"PUENTE DEL INCA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4968;"Reserva Villavicencio";"Aire libre";Mendoza;VILLAVICENCIO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+4969;"Facultad de Ciencias Agrarias";"Universidad/Centro de Estudio";Mendoza;"LUJAN DE CUYO";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5246;INDIGO;Otro;Mendoza;MENDOZA;"San Lorenzo 490, Mendoza";https://www.google.com.ar/maps/place/INDIGO+-+Almac%C3%A9n+de+Productos+Org%C3%A1nicos+y+Centro+de+Yoga/@-32.8927532,-68.8487021,17z/data=!3m1!4b1!4m5!3m4!1s0x967e091aad21d39f:0x2b7786184b15fe15!8m2!3d-32.8927532!4d-68.8465134?hl=es;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5248;"Instituto San Pedro Nolasco";Auditorio/Sala;Mendoza;MENDOZA;"Federico Moreno 1751, 5500 Mendoza";http://ispn.edu.ar/sitio/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5275;"Estudio de Danza Contemporánea";Auditorio/Sala;Mendoza;MENDOZA;"Uruguay 722, Mendoza";"https://www.google.com.ar/search?q=Estudio%20de%20Danza%20Contempor%C3%A1nea&oq=Estudio+de+Danza+Contempor%C3%A1nea&aqs=chrome..69i57j0.792j0j4&sourceid=chrome&ie=UTF-8&npsic=0&rflfq=1&rlha=0&rllag=-32897420,-68859672,1651&tbm=lcl&rldimm=11795664478120905611&ved=2ahUKEwi92Z7hr4HdAhVCIJAKHSo6DHIQvS4wAHoECAQQIQ&rldoc=1&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2#rlfi=hd:;si:11795664478120905611;mv:!1m3!1d36144.8609940557!2d-68.85326!3d-32.91585605!2m3!1f0!2f0!3f0!3m2!1i45!2i259!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2";;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5278;"Nave Universitaria";Auditorio/Sala;Mendoza;MENDOZA;"Maza 250, Ciudad de Mendoza";http://www.uncuyo.edu.ar/extension/nave-universitaria;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5285;"CENTRO DE MEDIACION DE LA MUNICIPALIDAD DE GODOY CRUZ";"Centro de Convenciones";Mendoza;MENDOZA;"Perito Moreno y Rivadavia de Godoy Cruz";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5370;"Hotel Mendoza";Hotel;Mendoza;MENDOZA;"Avenida España 1210";http://www.hotelmendoza.com/;;;;;;;;;;;"-32.887880, -68.841684";;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5374;"Parque Benegas";"Aire libre";Mendoza;"GOBERNADOR BENEGAS";"Av. San Martín Sur 2375";https://www.godoycruz.gob.ar/;;;;;;;;;;;-32.951849,-68.8554337;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5382;"Dakar Hotel & Spa";Hotel;Mendoza;MENDOZA;"Federico Moreno 1570";http://www.dakarhotel.com.ar;;;;;;;;;;;-32.8849523,-68.832122;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5383;"Salón Cultural Bernardino Rivadavia";"Centro Cultural";Mendoza;MENDOZA;"José Vicente Zapata 349";https://es-la.facebook.com/pages/category/Art-Gallery/Sal%C3%B3n-Cultural-Seguros-Rivadavia-Mendoza-456531644429954/;;;;;;;;;;;-32.8964135,-68.8351083;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5385;CAFETEARTE;Otro;Mendoza;MENDOZA;"Roque Sáenz Peña 320";https://www.eventbrite.com.ar/e/como-empezar-a-invertir-en-acciones-y-bonos-tickets-49561030376?aff=es2#;;;;;;;;;;;-32.8814427,-68.8546456;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5388;"Alianza Francesa";"Centro Cultural";Mendoza;MENDOZA;"Chile 1754";http://www.afmendoza.org;;;;;;;;;;;-32.8822322,-68.8438823;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5416;"Salón de Actos de la Suprema Corte de Justicia";Auditorio/Sala;Mendoza;MENDOZA;"Avenida España 480 Ciudad de Mendoza.";http://www.jus.mendoza.gov.ar/inicio;;;;;;;;;;;-32.897044,-68.8459126;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5431;"Fundación Rural";Auditorio/Sala;Mendoza;MENDOZA;"Av. Godoy Cruz 127";http://www.fundacionrural.org.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5434;"Museo Nacional del Vino y de la Vendimia";Museo;Mendoza;MAIPU;"Ozamis 914";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5437;"Polideportivo Deportistas Alvearenses";"Club/Centro Deportivo";Mendoza;"CIUDAD DE GENERAL ALVEAR";"M5620 Gral. Alvear, Mendoza";-34.9796877,-67.7099406;;;;;;;;;;;-34.9796877,-67.7099406;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5445;"Punto Malbec";Auditorio/Sala;Mendoza;MENDOZA;"San Martín y Mariano Moreno";lujandecuyo.gob.ar;;;;;;;;;;;-33.0365049,-68.8792862;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5446;"Centro Cultural la Colombina";"Centro Cultural";Mendoza;MENDOZA;"Balcarce 220";https://es-la.facebook.com/teatrolacolombina/;;;;;;;;;;;-32.9226513,-68.84435;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5463;"Estadio cubierto La Colonia";"Club/Centro Deportivo";Mendoza;JUNIN;"Calles Neuquén y Colonia, La Colonia";;;;;;;;;;;;-33.0934619,-68.477924;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5464;"Espacio Fotografico Maximo Arias";"Centro Cultural";Mendoza;MENDOZA;"Calle Jorge Contreras,1250 Parque General San Martin";;;;;;;;;;;;-32.8842014,-68.8667283;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5466;"BODEGA MARQUÉS DE MONTECRISTO";"Salón/Casa de Eventos";Mendoza;"CRUZ DE PIEDRA";"Ruta 60 y Laprida";;;;;;;;;;;;-33.0191715,-68.7923309;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5474;"Bodega Dante Robino";Otro;Mendoza;PERDRIEL;"Quintana 375 (M5509), Perdriel, Luján de Cuyo";http://www.bodegadanterobino.com;;;;;;;;;;;-33.0554435,-68.8782787;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5476;"Bodega del 900";"Salón/Casa de Eventos";Mendoza;MENDOZA;"25 de Mayo 4995, M5521";http://www.labodegadel900.com.ar/;;;;;;;;;;;-32.9088723,-68.784890;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5482;"Bodega Centenario";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;"Pedro Vargas 2311";https://www.bodegacentenario.com.ar;;;;;;;;;;;-32.8712192,-68.861311;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5497;"FAD UNCUYO";"Universidad/Centro de Estudio";Mendoza;MENDOZA;"Centro Universitario M5502JMA";http://fad.uncuyo.edu.ar/;;;;;;;;;;;-32.8808087,-68.8795871;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5514;"DAMSU UNCUYO";"Hospital/Centro Médico";Mendoza;MENDOZA;"CENTRO UNIVERSITARIO";www.damsu.uncuyo.edu.ar;;;;;;;;;;;-32.8809541,-68.8756429;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5523;"Centro Integrador Universitario";"Hospital/Centro Médico";Mendoza;"SAN RAFAEL";"Gral. Paz 1045";https://es-la.facebook.com/pages/category/Community-Organization/Centro-Integrador-Universitario-CIU-150903828917682/;;;;;;;;;;;-34.6035402,-68.3271324;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5524;"Escuela Nº 4-017 “Bernardino Izuel”";"Universidad/Centro de Estudio";Mendoza;"VILLA ATUEL";"San Martín y 25 de Mayo";http://bizuel.educatecno.com.ar/;;;;;;;;;;;-34.8312376,-67.9248278;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5529;"Terminal de Omnibus de Malargüe";"Predio Ferial";Mendoza;MALARGUE;;;;;;;;;;;;;-35.4740641,-69.589004;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5539;"Concejo Deliberante HCD - San Carlos";Auditorio/Sala;Mendoza;"SAN CARLOS";"Bernardo Quiroga y Ruta Nacional N° 40 (planta alta terminal)";;;;;;;;;;;;-33.7782105,-69.0606626;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5540;"IFDyT Nº 9-006 Profesor Francisco Humberto Tolosa";"Universidad/Centro de Estudio";Mendoza;RIVADAVIA;;;;;;;;;;;;;-33.1918437,-68.4711493;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5622;"Village Cines";Teatro/Cine;Mendoza;MENDOZA;"Avenida Acceso Este 3280 Mendoza Plaza Shopping";;;;;;;;;;;;-32.9082,-68.8562196;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5623;"Gran Hotel Uspallata";Hotel;Mendoza;USPALLATA;"RN7 Km 1149";www.granhoteluspallata.com.ar;;;;;;;;;;;-32.5878692,-69.3557578;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5630;"Polideportivo Municipal Hipólito Yrigoyen";"Club/Centro Deportivo";Mendoza;MENDOZA;Valcanera;;;;;;;;;;;;-33.0288575,-68.8851195;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5636;"Anexo del Museo Municipal de Arte Moderno de Mendoza (MMAMM)";Auditorio/Sala;Mendoza;MENDOZA;"Parque Central";https://www.ciudaddemendoza.gov.ar/gobierno/areas-municipales/secretaria-planificacion-infraestructura-y-ambiente/plan-de-renovacion-urbana/espacios-culturales/sala-satelite-mmamm/;;;;;;;;;;;-32.873588,-68.8402487;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5654;"Polo TIC";Auditorio/Sala;Mendoza;MENDOZA;"Rafael Cubillos 2100-2198, Godoy Cruz";;;;;;;;;;;;-32.9395372,-68.8204511;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5739;"Instituto Nacional del Agua";Auditorio/Sala;Mendoza;MENDOZA;"Av. Belgrano 210, Mendoza";http://ina.gob.ar/;;;;;;;;;;;-32.8982581,-68.8524896;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5746;"Campus Olegario";Auditorio/Sala;Mendoza;MENDOZA;"Olegario Andrade 315, Ciudad de Mendoza";http://www.campusolegario.org/;;;;;;;;;;;-32.9015705,-68.856195;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5767;"Club de Emprendedores Mendoza";Auditorio/Sala;Mendoza;MENDOZA;"Av. Perú y Av. Las Heras";https://ciudaddemendoza.gov.ar/;;;;;;;;;;;-32.884193,-68.848315;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5770;"Colegio de Arquitectos de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;"Avenida Bartolomé Mitre  617";http://camza.org.ar/;;;;;;;;;;;-32.8949424,-68.8457796;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5771;"Colegio de Arquitectos de Mendoza Regional Este";Auditorio/Sala;Mendoza;"CIUDAD DE SAN MARTIN";"Las Heras 603, M5570 San Martín";http://camza.org.ar;;;;;;;;;;;-33.090297,-68.4746077;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5773;"Teatro Las Sillas";Auditorio/Sala;Mendoza;MENDOZA;"Olegario Andrade 510 - 2do piso";https://www.facebook.com/TeatroLasSillas;;;;;;;;;;;-32.9016481,-68.8587693;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5775;"Antena Polar";Auditorio/Sala;Mendoza;MENDOZA;"Roque Sáenz Peña 493";https://antenapolar.com/;;;;;;;;;;;-32.8808831,-68.855268;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5942;"Escuela técinica de Pareditas";"Universidad/Centro de Estudio";Mendoza;PAREDITAS;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+5995;"Sociedad Rural del Valle de Uco";Auditorio/Sala;Mendoza;"EUGENIO BUSTOS";"Ejercito de los Andes y Ruta 40 / Eugenio Bustos, San Carlos, Mendoza";http://www.sociedadruralvdu.com.ar;;;;;;;;;;;-33.7654398,-69.0596509;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6172;"Hotel Vecchia Terra";Hotel;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6183;"Bodega Sutter";"Bodega/Restaurante/Club Nocturno";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6444;"DIRECCION DE TURISMO SAN RAFAEL";"Centro Cultural";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6662;"Centro de Formación Laboral Sarmiento";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6707;"Cámara de Comercio San Rafael";"Salón/Casa de Eventos";Mendoza;"SAN RAFAEL";"AVENIDA LIBERTADOR 78";;3;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6818;"Bodega Trapiche";Auditorio/Sala;Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6819;"Municipalidad de Mendoza";"Centro Cultural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6820;"Club Unión Deportiva San José";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6821;"Parque Tecnológico de Godoy Cruz";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6822;"SOCIEDAD ESPAÑOLA DE LUJAN";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6823;"Universidad de Mendoza San Rafael";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6825;"UTN Mendoza";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6839;"Auditorio Alameda";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6840;"Hospital Lagomaggiore";"Hospital/Centro Médico";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6841;"Bodega Andeluna";"Bodega/Restaurante/Club Nocturno";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6842;"Bodega Caro";"Bodega/Restaurante/Club Nocturno";Mendoza;"LUJAN DE CUYO";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6843;"Centro Cultural Armando Tejada Gómez";"Centro Cultural";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6844;"Club de Emprendedores de Godoy Cruz";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6845;"Club Hípico";"Club/Centro Deportivo";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6846;"Estadio cubierto Arena Aconcagua";Estadio;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6847;"Municipalidad de Maipu";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6848;"Museo del Vino y la Vendimia";Museo;Mendoza;MENDOZA;;;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6849;"Poder Judicial";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6850;"Sindicato Argentino de Televisión";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+6851;"Teatro Selectro";Teatro/Cine;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7157;"ESCUELA FAUSTO BURGO";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7183;"MINISTERIO VIDA Y PAZ";"Casa Religiosa/Iglesia";Mendoza;"SAN RAFAEL";"OLASCOAGA 600";/www.vidaypaz.org;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7280;"Colegio Notarial San Rafael";Auditorio/Sala;Mendoza;"SAN RAFAEL";;;1;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7295;"Auditorio del Poder Judicial";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7296;"Bodega Passionate Wine";"Bodega/Restaurante/Club Nocturno";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7297;"Casa de la Cultura Juanita Vera y CEIL";"Centro Cultural";Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7298;"Hospital Jose Nestor Lencinas";"Hospital/Centro Médico";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7310;"Instituto de Educación Superior 9-007 Dr. Salvador Calafat";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7311;"Museo Juan Cornelio Moyano";Museo;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7312;"Parque Cívico";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7338;"Paso Pehuenche";"Aire libre";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7343;"hostal de los andes";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7362;"Auditorio Poder Judicial";"Salón/Casa de Eventos";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7371;"VILLA SANTA CLARA DEL ATUEL";"Establecimiento Rural";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7388;"Instituto Gastronómico Internacional";"Hospital/Centro Médico";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7390;"Bodegas Caro";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7391;"Predio Ferial FERIAGRO";"Predio Ferial";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7750;"Casa de Retiro de Nuestra Señora del Tránsito";"Casa Religiosa/Iglesia";Mendoza;LUNLUNTA;"Franklin Villanueva y Maza (5517)";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+7782;"Centro de Congresos y Exposiciones. Auditorio Ángel Bustelo.";"Centro de Convenciones";Mendoza;MENDOZA;;;9;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8352;"Hotel Casino Cóndor de los Andes";Hotel;Mendoza;GUAYMALLEN;"boulevard Pérez Cuesta esquina acceso Este";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8354;"Bodega Zuccardi";"Bodega/Restaurante/Club Nocturno";Mendoza;"SAN CARLOS";"Costa Canal Uco s/n - Paraje Altamira, San Carlos, Mendoza";https://zuccardiwines.com/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8355;"Bodega Krontiras Wines";"Bodega/Restaurante/Club Nocturno";Mendoza;"LUJAN DE CUYO";"Olavarría 4900, Luján de Cuyo, Mendoza";https://www.krontiraswines.com/bodega-krontiras/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8357;"Andino Tenis Club";"Club/Centro Deportivo";Mendoza;MENDOZA;"Av. Boulogne Sur Mer 1230";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8359;"Universidad Católica Argentina - Sede Mendoza";"Universidad/Centro de Estudio";Mendoza;"GODOY CRUZ";"Uruguay 750";https://uca.edu.ar/es/facultades/facultad-de-humanidades-y-ciencias-economicas;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8360;"Polideportivo Juan Domingo Ribosqui";"Club/Centro Deportivo";Mendoza;MAIPU;;;;;;;;;;;;;-32.9767085,-68.7965523,17;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8361;"Cine Teatro Imperial";Teatro/Cine;Mendoza;MAIPU;"Pablo Pescara 323";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8362;"Royal Princess - Hoteles Gold";Hotel;Mendoza;MENDOZA;"25 DE MAYO 777 - MENDOZA - ARGENTINA";https://hotelroyalprincess.com.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8364;"Centro Cultural de Eugenio Bustos";"Centro de Convenciones";Mendoza;TUNUYAN;"Padre Ambrosio Bonfanti 169";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8366;"Polideportivo Luján de Cuyo";"Club/Centro Deportivo";Mendoza;"LUJAN DE CUYO";"FranciscoEvans 1148";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8367;"Cerro Arco";"Aire libre";Mendoza;"LAS HERAS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8368;"Bodega Artesanal L'Orange";"Bodega/Restaurante/Club Nocturno";Mendoza;"CHACRAS DE CORIA";"Alem 5170";https://www.instagram.com/lorangelove/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8370;"Cine Teatro Antonio Lafalla";Teatro/Cine;Mendoza;"CIUDAD DE GENERAL ALVEAR";"Av. Alvear Oeste 437";https://cineteatrolafalla.alvearmendoza.gob.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8374;"Edificio Margarita Malharro de Torres";Auditorio/Sala;Mendoza;MENDOZA;"P.º Sarmiento 247";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8377;"Torre Emilia RedCouch";Auditorio/Sala;Mendoza;MENDOZA;"Emilio Civil 484";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8378;"Casona Perdriel";"Salón/Casa de Eventos";Mendoza;PERDRIEL;"San Martín 2892";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8379;"Colegio Congreso";"Universidad/Centro de Estudio";Mendoza;GUAYMALLEN;"Av. Bandera de los Andes 1009";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8380;"Facultad Don Bosco de Enología y Ciencias de la Alimentación";"Universidad/Centro de Estudio";Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8382;"Caja de Previsión de Salud";"Hospital/Centro Médico";Mendoza;MENDOZA;"Av. Peltier y San Martín";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8383;"Instituto de Desarrollo Industrial Tecnológico y de Servicios (IDITS)";"Centro de Convenciones";Mendoza;"GODOY CRUZ";"Rafael Cubillos 2056";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8384;"Baquiano Restaurante Criollo";"Bodega/Restaurante/Club Nocturno";Mendoza;"VILLA TULUMAYA";"RP24, Villa Tulumaya";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8385;"Departamento General de Irrigación";"Establecimiento Rural";Mendoza;MONTECASEROS;"Costa Canal Km. 4.5";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8390;"Instituto Universitario de Seguridad Pública";"Universidad/Centro de Estudio";Mendoza;"GODOY CRUZ";"Salta 672, M5501 Godoy Cruz, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8393;IMPSA;Otro;Mendoza;"GODOY CRUZ";"Carril Rodríguez Peña 2451, M5503 Godoy Cruz, Mendoza";https://www.impsa.com/quienes-somos/impsa/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8394;"Polo Judicial de Mendoza.";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8396;"Asociación de Psicoanálisis de Pareja, Familia y Grupo";"Hospital/Centro Médico";Mendoza;"GODOY CRUZ";"Maipú 235 Oficina 19";https://parejafamiliagrupo.org.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8397;"Sagrada Cocina";"Bodega/Restaurante/Club Nocturno";Mendoza;"LUJAN DE CUYO";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8399;"Auditorio Municipal De Tunuyan";Auditorio/Sala;Mendoza;TUNUYAN;"Leandro N. Alem 748";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8400;"Campus Barcala";Auditorio/Sala;Mendoza;MENDOZA;"Av. Perú 1841";https://www.campusbarcala.com/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8401;"Escuela Técnica de la Universidad de Mendoza (ETec)";"Universidad/Centro de Estudio";Mendoza;"GODOY CRUZ";"Perito Moreno 2397";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8402;"Polideportivo Nicolino Loche";"Club/Centro Deportivo";Mendoza;GUAYMALLEN;"Amigorena 6950";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8403;"Hospital El Carmen";"Hospital/Centro Médico";Mendoza;"GODOY CRUZ";"Godoy Cruz";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8404;"Estadio Leopoldo Brozovix";"Club/Centro Deportivo";Mendoza;RIVADAVIA;"QGXF+5X, Rivadavia, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8408;"Museo Carlos Alonso - Mansión Stoppel";"Salón/Casa de Eventos";Mendoza;MENDOZA;"Emilio Civit";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8409;"Mendoza Rugby Club";"Club/Centro Deportivo";Mendoza;GUAYMALLEN;"Mathus Hoyos 4247";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8414;"Estadio Ciudad de Godoy Cruz";Estadio;Mendoza;"GODOY CRUZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8415;"Bodega Vistandes";"Bodega/Restaurante/Club Nocturno";Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8418;"SUM Colegio de Veterinarios de Mendoza.";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8420;"Estación Experimental Agropecuaria Junín INTA";"Predio Ferial";Mendoza;JUNIN;"Isidoro Busquet s/n, La Colonia";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8425;"Salon de Fiestas El Paseo";"Salón/Casa de Eventos";Mendoza;MAIPU;"J. A. Maza 766 m5515";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8426;"Centro Tradicionalista La Celia";"Centro de Convenciones";Mendoza;"SAN CARLOS";"6W9H+2W, Eugenio Bustos";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8428;Wakapi;Otro;Mendoza;"GODOY CRUZ";"Av. San Martín 1175, M5501 Godoy Cruz";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8430;"Municipio de Lavalle";"Salón/Casa de Eventos";Mendoza;"VILLA TULUMAYA";"Beltrán 37";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8433;"Gimnasio Xtraining";"Club/Centro Deportivo";Mendoza;"SAN RAFAEL";;;1;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8435;"Universidad Champagnat - Sede San Rafael";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";"Av. El Libertador 150";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8438;"Frutas Escartín";Otro;Mendoza;"CIUDAD DE GENERAL ALVEAR";"Bowen, Mendoza";https://frutasescartin.com.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8444;"Centro Verde";Otro;Mendoza;"LAS HERAS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8446;"Teatro Griego Frank Romero Day";Teatro/Cine;Mendoza;MENDOZA;"Subida Cerro de la Gloria";https://www.mendoza.gov.ar/cultura/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8448;"Escuela 4-025";"Universidad/Centro de Estudio";Mendoza;"LOS CORRALITOS";"Severo del Castillo 4174";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8449;"Finca Los Almendros";"Establecimiento Rural";Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8450;"Polideportivo Lavalle";"Club/Centro Deportivo";Mendoza;"VILLA TULUMAYA";"C. Belgrano 215";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8452;"cruz roja san rafael";Auditorio/Sala;Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8454;"Centro Regional de Desarrollo Tecnológico ""Los Reyunos""";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";"ruta 150, Los Reyunos, Villa 25 de Mayo, San Rafael";https://www.reyunos.utn.edu.ar/?cur=ARS;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8455;"Espacio Flor Blanca (Calle José Braña 1735)";"Aire libre";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8456;"Plaza Departamental Bernardino Rivadavia";Otro;Mendoza;RIVADAVIA;"San Isidro, M5577 Rivadavia, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8461;"Plaza de Godoy Cruz";"Aire libre";Mendoza;"GODOY CRUZ";"Calle Perito Moreno & Rivadavia";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8471;"Centro Teosófico de San Rafael";Otro;Mendoza;"SAN RAFAEL";;http://www.sociedadteosofica.org.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8473;"Esc. 4-021 Martin Guemes - La Llave";Otro;Mendoza;"LA LLAVE";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8474;"CLUB BANCO MENDOZA";"Salón/Casa de Eventos";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8475;"KM 0 - San Rafael";"Aire libre";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8476;"Auditorio del Palacio de Tribunales de San Rafael";Auditorio/Sala;Mendoza;"SAN RAFAEL";;https://colejus.com.ar/?option=com_content&view=article&id=1685%3Areunion-abierta-02-07-2015&catid=88%3Acomision-de-jovenes-abogados&Itemid=403;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8477;"Plaza Francia - San Rafael";"Aire libre";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8478;"Instituto Profesorado de Arte - San Rafael";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8489;"Tree House Hostel";Hotel;Mendoza;"SALTO DE LAS ROSAS";"Ruta Nacional 143 - Km 497";"https://www.booking.com/searchresults.es.html?aid=311839&label=treehouse-hostel-5fX0lsocON64NoHggO3muQS175890418065%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-296006567449%3Alp1000095%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txiCD_GKCoqnfQ&sid=2fe293ec4726f15dee4de7f718b0f59b&city=-1011512&expand_sb=1&highlighted_hotels=907875&hlrd=no_dates&keep_landing=1&redirected=1&source=hotel&gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT_d3wE_1vMrZcrzjMtq58QM4pxrxJlcAWznMmJaVpIiGF6XL8jTnlUaAineEALw_wcB&room1=A,A,;";;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8491;"Plaza Italia - San Rafael";"Aire libre";Mendoza;"SAN RAFAEL";https://www.google.com/maps/place/Plaza+Italia/@-34.6068457,-68.3563261,15z/data=!4m2!3m1!1s0x0:0xf45ac3c26ebd1717?sa=X&ved=2ahUKEwitl57uocz8AhWzH7kGHfeVARAQ_BJ6BAhGEAg;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8492;"Club Banco Nación";"Club/Centro Deportivo";Mendoza;"CIUDAD DE GENERAL ALVEAR";"Roque Sáenz Peña s/n";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8493;"Autodromo ASA - San Rafael";"Club/Centro Deportivo";Mendoza;"SAN RAFAEL";https://www.google.com/search?q=aut%C3%B3dromo%20ciudad%20de%20san%20rafael&sxsrf=AJOqlzVV7ys1nSYYAJPEbnjV75pJH1Oxfg:1673879014811&ei=5F3FY_jAA5W95OUPxJqroA4&ved=2ahUKEwjNosygpcz8AhXpDrkGHUmSCjQQvS56BAgKEAE&uact=5&oq=aut%C3%B3dromo+ciudad+de+san+rafael&gs;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8494;"Municipalidad de General Alvear";Otro;Mendoza;"CIUDAD DE GENERAL ALVEAR";"Av. Alvear Oeste 550";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8495;"Mirlo cafe bar";"Bodega/Restaurante/Club Nocturno";Mendoza;"VILLA TULUMAYA";"José Adriano Pujadas 54";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8496;"Centro Patrimonial y Artístico Cristoforo Colombo";"Centro de Convenciones";Mendoza;"GODOY CRUZ";"Antonio Tomba 246";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8497;"Rancho Cultural La Condorera - San Rafael";"Centro Cultural";Mendoza;"25 DE MAYO";https://www.google.com/maps/place/Rancho+Cultural+.+La+condorera/@-34.58063,-68.5455102,17z/data=!4m5!3m4!1s0x96797525ebeaed35:0x5e8901917a9a208b!8m2!3d-34.58063!4d-68.5433215?hl=es;https://www.facebook.com/marianoalfredosabez/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8501;"Nevado Golf Club - San Rafael";Hotel;Mendoza;"SAN RAFAEL";"Bianchi y Las Vírgenes del distrito Las Paredes";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8502;"Polideportivo N°2";"Club/Centro Deportivo";Mendoza;"SAN RAFAEL";https://www.google.com/maps/place/Polideportivo+Municipal+No.2/@-34.621874,-68.3335947,14z/data=!4m5!3m4!1s0x9679a80e3f20989b:0x6788ef201e446467!8m2!3d-34.6347686!4d-68.3234975;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8504;"Auditorio Margarita Malharro de Torres de la Legislatura Provincial.";Auditorio/Sala;Mendoza;MENDOZA;"Peatonal Sarmiento y Patricias Mendocinas";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8510;"Anfiteatro Municipal Tunuyan";Auditorio/Sala;Mendoza;TUNUYAN;"H. Cuadros 1251";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8522;"Cine Ducal";Teatro/Cine;Mendoza;RIVADAVIA;"Lavalle 740, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8537;"Estación Benegas";"Aire libre";Mendoza;"GODOY CRUZ";"Av. San Martín Sur 2375";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8538;"Centro cultural Pascual Lauriente - Municipalidad de Guaymallén";"Centro de Convenciones";Mendoza;GUAYMALLEN;"Av. Bandera de los Andes 8956";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8551;"Cine Real Teatro Municipal de La Consulta";Teatro/Cine;Mendoza;"LA CONSULTA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8552;"Mendoza Plaza Shopping";"Shopping/Centro Comercial";Mendoza;GUAYMALLEN;"Av. de Acceso Este 3280";http://www.mendozaplazashopping.com/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8553;"Gimnasio N°9";"Club/Centro Deportivo";Mendoza;"LAS HERAS";"Bombal y Los Pimientos - Barrio Cementista";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8554;"Parque de la Familia";"Aire libre";Mendoza;"LAS HERAS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8556;"Academia Sinergia";Otro;Mendoza;"SAN RAFAEL";"Emilio Civit 55";https://www.sinergiasr.com.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8557;"Plaza Gral San Martin";"Aire libre";Mendoza;"SAN CARLOS";"San Martín 200, La Consulta";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8559;"Escuela secundaria 4-206 Mapu Mahuida";"Universidad/Centro de Estudio";Mendoza;"RIO GRANDE";"Peregrina Cantos s/n de Bardas Blancas";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8560;"Dirección de Turismo Malargüe";"Aire libre";Mendoza;MALARGUE;"Pasaje la Orteguina";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8561;"Campus Educativo";"Universidad/Centro de Estudio";Mendoza;MALARGUE;"Rosario Vera Peñaloza, Fray Luis Beltrán Oeste &, Malargüe";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8562;"Predio Fiesta";"Aire libre";Mendoza;"SANTA ROSA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8564;"Espacio Arizu";"Centro Cultural";Mendoza;"GODOY CRUZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8565;"Calle Laprida";"Aire libre";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8566;"Polideportivo Eugenio Bustos";"Club/Centro Deportivo";Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8567;"Globant Mendoza";Otro;Mendoza;MENDOZA;"50 Gutiérrez BZA, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8568;"Cerro Aconcagua";"Aire libre";Mendoza;"LAS HERAS";"Ruta Nacional 7";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8704;"Parque Recreativo Dueño del Sol";"Aire libre";Mendoza;JUNIN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8706;"Auditorio Municipal de Santa Rosa";Otro;Mendoza;"SANTA ROSA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8712;"Parque de la Familia";"Aire libre";Mendoza;"VILLA TULUMAYA";"Calle Hipólito Yrigoyen";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8713;"Predio Gaucho";"Aire libre";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8715;"Archivo General";Museo;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8718;"Paseo Los Robles";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8719;"Espacio ECoS de la Municipalidad";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8720;"Sala Amarilla de la Municipalidad de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8721;"Paseo de la Patria";"Aire libre";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8722;"Paso Planchon Vergara";"Aire libre";Mendoza;MALARGUE;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8724;"Tótem Boulevard";"Aire libre";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8725;"Casa Serú";Otro;Mendoza;GUAYMALLEN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8738;"Plaza José Hernández";"Aire libre";Mendoza;"SAN CARLOS";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8739;"Boulevard Pedro Molina";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8740;"Parque UNIMEV";"Aire libre";Mendoza;GUAYMALLEN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8742;"Municipalidad de Godoy Cruz";Auditorio/Sala;Mendoza;"GODOY CRUZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8743;"BEERLIN BAR & FOOD";"Bodega/Restaurante/Club Nocturno";Mendoza;MENDOZA;"Avenida Arístides Villanueva 129";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8745;"Casa de San Martín";Museo;Mendoza;MENDOZA;"Corrientes 343";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8747;"Paso Las Damas";"Aire libre";Mendoza;"LUJAN DE CUYO";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8761;"Plaza Juan Bautista Alberdi";"Aire libre";Mendoza;JUNIN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8764;"La Finquita 1920";"Bodega/Restaurante/Club Nocturno";Mendoza;MAIPU;"Manuel cruz videla 450";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8765;"Auditorio Marciano Cantero";Auditorio/Sala;Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8795;"Peatonal Sarmiento";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8803;"Parque O´Higgins";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8804;"Prado Gaucho";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8824;"Plaza Chile";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8828;"Escuela 4-089 José Manuel Estrada de San Martín";"Universidad/Centro de Estudio";Mendoza;"CIUDAD DE SAN MARTIN";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8829;"Plaza Departamental Carlos María de Alvear";"Aire libre";Mendoza;"CIUDAD DE GENERAL ALVEAR";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8830;"Parque Deportivo de Montaña";"Aire libre";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8831;"CIVIT HOUSE";"Salón/Casa de Eventos";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8832;"Plaza 9 de julio";"Aire libre";Mendoza;"LA PAZ";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8833;"Parque Nativo";"Aire libre";Mendoza;"VILLA TULUMAYA";;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8912;"Anfiteatro Este de la Facultad de Ingeniería";Auditorio/Sala;Mendoza;MENDOZA;"Centro Universitario";https://ingenieria.uncuyo.edu.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8913;"Parque de la Niñez";"Aire libre";Mendoza;"LAS HERAS";"Las Heras, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8914;"Parque del Acceso Este";"Aire libre";Mendoza;GUAYMALLEN;"Lateral Sur del Acceso Este, M5519 Guaymallén, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8918;"Centro de Jubilados Eterna Juventud";Otro;Mendoza;"GODOY CRUZ";"Domingo Rigol N*27  Pila";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8922;"Finca Agostino";"Bodega/Restaurante/Club Nocturno";Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8929;"Lamadrid Estate Wines";"Bodega/Restaurante/Club Nocturno";Mendoza;"LUJAN DE CUYO";"Roque Sáenz Peña 8450";https://www.lamadridwines.com/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8931;"Plaza Dr. E. Matons";"Aire libre";Mendoza;TUPUNGATO;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8932;"Centro Social y Deportivo Villa Hipódromo";"Club/Centro Deportivo";Mendoza;"GODOY CRUZ";"Paso de los Andes 1508";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8951;"RP60, M5585 Junín, Mendoza";"Bodega/Restaurante/Club Nocturno";Mendoza;JUNIN;"RP60, M5585 Junín, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8952;"Bodega Aleph Wine Co";"Bodega/Restaurante/Club Nocturno";Mendoza;JUNIN;"RP60, M5585 Junín, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8960;"Asociación Amateur Mendocina de Hockey Sobre Césped";"Club/Centro Deportivo";Mendoza;"GODOY CRUZ";"Almte. Brown 399";https://mdzhockey.com.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+8966;"Complejo Costa Azul";"Aire libre";Mendoza;JUNIN;"Junin, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9003;"Estación Experimental Agropecuaria";Otro;Mendoza;"LUJAN DE CUYO";"San Martin 3853 Estación Experimental Agropecuaria Mendoza AER, M5534 Luján de Cuyo, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9008;"Nave UNCUYO";"Centro Cultural";Mendoza;MENDOZA;"250 Juan Agustín Maza Av. España 2102 Ciudad de Mendoza, Mendoza M5500";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9022;"Planetario Malargüe";"Centro Cultural";Mendoza;MALARGUE;"Gral. Villegas Oeste, Malargüe, Mendoza";https://planetario.malargue.gov.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9024;"Auditorio Legislatura de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9037;"Quinta Doña Elvira";"Aire libre";Mendoza;"RODEO DE LA CRUZ";"callejón Famatina 1783 rodeo de la cruz 5525, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9042;FADIUNC;Otro;Mendoza;MENDOZA;"M5502IUA, Lamadrid 725, M5502IUA Mendoza";https://www.fadiunc.org.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9073;"AMProS Finca";Otro;Mendoza;"CRUZ DE PIEDRA";"Videla Aranda 2080, Cruz de Piedra, Maipú";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9116;"Colegio San Rafael Hnos Maristas";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";"Nicolás Avellaneda 351";http://www.maristasanrafael.com/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9117;"Colegio de Abogados San Rafael";Otro;Mendoza;"SAN RAFAEL";"Emilio Civit 257";https://colejus.com.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9123;"Escuela Nº 4-057 Margarita Asunción Cinca de Geary -";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";"Calle Falucho 1725";https://dti.mendoza.edu.ar/gem/ingreso/publico/escuela/1045/2;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9124;"Universidad de Congreso";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";"Comandante Salas 339";https://www.ucongreso.edu.ar/san-rafael-i-jornada-de-investigacion-en-psicologia/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9129;"circulo medico";"Hospital/Centro Médico";Mendoza;"SAN RAFAEL";"godoy cruz 361";https://ospip.org.ar/acadp_listings/circulo-medico-san-rafael/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9388;"Holtel Hilton";Hotel;Mendoza;"SAN JOSE";"Lateral Nte. Acceso Este 3292, M5521";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
