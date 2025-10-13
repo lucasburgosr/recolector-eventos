@@ -1,9 +1,16 @@
 ﻿Id;Nombre;"Tipo de sede";Provincia;Localidad;Dirección;Web;"Cantidad salones";"Cantidad pabellones";"Metros cuadrados cubiertos";"Metros cuadrados descubiertos";"Capacidad maxima auditorio";"Capacidad maxima escuela";"Capacidad maxima recepcion";"Capacidad maxima banquete";"Sede registrada oficialmente";"Fecha de baja";Latlon;"Recurso sostenibilidad agua";"Recurso sostenibilidad energia";"Recurso sostenibilidad residuos";"¿Cuál otra?";"Certificacion ambiental";¿Cuál?;"¿Cuál otra?";"Responsabilidad social";"Condicion accesibilidad universal";"¿Cuál otra?";"Condicion accesibilidad sensorial";"¿Cuál otra?";"Personal conocimiento lengua senias"
 4;"Universidad del Aconcagua";"Universidad/Centro de Estudio";Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 9;"Universidad Nacional de Cuyo (UNCUYO)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;": Centro Universitario, Parque General San Martín s/n";http://www.uncuyo.edu.ar/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
-10;"Centro de Congresos y Exposiciones Francisco";"Centro de Convenciones";Mendoza;"CIUDAD DE SAN MARTIN";"ciudad de San Martin";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
-11;"Hotel Intercontinental Mendoza Guaymallen";Hotel;Mendoza;MENDOZA;"Pérez Cuesta, Mendoza";;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 16;"Universidad de Mendoza (UM)";"Universidad/Centro de Estudio";Mendoza;MENDOZA;"Av. Boulogne Sur Mer 683, 5500 Mendoza";http://www.um.edu.ar/es/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+10;"Centro de Congresos y Exposiciones Francisco";"Centro de Convenciones";Mendoza;"CIUDAD DE SAN MARTIN";"ciudad de San Martin";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+9388;"Hilton Mendoza";Hotel;Mendoza;"SAN JOSE";"Lateral Nte. Acceso Este 3292, M5521";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2325;"Hotel NH Cordillera";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2322;"Hotel Huentala";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2323;"Hotel Mod";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2331;"Hotel Sheraton Mendoza";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2320;"Hotel Diplomatic Mendoza";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+2326;"Hotel Park Hyatt Mendoza";Hotel;Mendoza;MENDOZA;"Chile 1124";https://mendoza.park.hyatt.com/en/hotel/home.html;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
+11;"Hotel Intercontinental Mendoza Guaymallen";Hotel;Mendoza;MENDOZA;"Pérez Cuesta, Mendoza";;;;;;;;;;;2019-11-15;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 18;"Nave Cultural";"Centro Cultural";Mendoza;MENDOZA;"España Gran, Vendimiadores, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 21;"Auditorio Ángel Bustelo";Auditorio/Sala;Mendoza;MENDOZA;"Av. Peltier 611, 5500 Capital, Mendoza";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 29;"Secretaría de Cultura de Mendoza";Auditorio/Sala;Mendoza;MENDOZA;"España y Gutiérrez";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
@@ -158,16 +165,11 @@
 2319;"Hotel de Turismo de Tupungato";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2320;"Hotel Diplomatic Mendoza";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2321;"Esplendor Hotel";Hotel;Mendoza;MAIPU;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
-2322;"Hotel Huentala";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
-2323;"Hotel Mod";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2324;"Hotel Montañas Azules";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
-2325;"Hotel NH Cordillera";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
-2326;"Hotel Park Hyatt Mendoza";Hotel;Mendoza;MENDOZA;"Chile 1124";https://mendoza.park.hyatt.com/en/hotel/home.html;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2327;"Hotel Pasambay";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2328;"Hotel Premium Tower";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2329;"Hotel Raíces Aconcagua";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2330;"Hotel Savoia";Hotel;Mendoza;GUAYMALLEN;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
-2331;"Hotel Sheraton Mendoza";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2332;"Hotel Svaoia";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2333;"Hotel Tower Mendoza ";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 2334;"Hotel Villa Mansa";Hotel;Mendoza;MENDOZA;;;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
@@ -589,4 +591,3 @@
 9123;"Escuela Nº 4-057 Margarita Asunción Cinca de Geary -";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";"Calle Falucho 1725";https://dti.mendoza.edu.ar/gem/ingreso/publico/escuela/1045/2;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 9124;"Universidad de Congreso";"Universidad/Centro de Estudio";Mendoza;"SAN RAFAEL";"Comandante Salas 339";https://www.ucongreso.edu.ar/san-rafael-i-jornada-de-investigacion-en-psicologia/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
 9129;"circulo medico";"Hospital/Centro Médico";Mendoza;"SAN RAFAEL";"godoy cruz 361";https://ospip.org.ar/acadp_listings/circulo-medico-san-rafael/;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido
-9388;"Holtel Hilton";Hotel;Mendoza;"SAN JOSE";"Lateral Nte. Acceso Este 3292, M5521";;;;;;;;;;;;;;;;;Desconocido;;;Desconocido;;;;;Desconocido

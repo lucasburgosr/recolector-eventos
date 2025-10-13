@@ -1,48 +1,59 @@
 from fuzzywuzzy import process
-from bs4 import BeautifulSoup
-import requests
-from groq import RateLimitError
+import pandas as pd
+from .helpers_llm import (
+    build_groq_clients_from_env,
+    extract_clean_text_from_url,
+    llm_complete_with_failover,
+    MODELOS_GROQ_DEFAULT,
+)
 
-
-def asignar_entidades_organizadoras(df_eventos, df_organizaciones, llm_client):
+def asignar_entidades_organizadoras(
+    df_eventos: pd.DataFrame,
+    df_organizaciones: pd.DataFrame,
+    modelos=None,
+    prefer_alt_key_first: bool = True,
+    write_csv_path: str = "./data/eventos_con_entidades.csv",
+) -> pd.DataFrame:
+    """
+    Para cada evento:
+      1) Baja y limpia el HTML
+      2) Pide al LLM la 'entidad organizadora principal' (texto)
+      3) Fuzzy-match contra catálogo oficial
+    Fallback entre modelos y entre API keys (EMETUR y GROQ).
+    """
     entidades = df_organizaciones["Entidad organizadores"].dropna().unique().tolist()
+    modelos = modelos or MODELOS_GROQ_DEFAULT
+    clients = build_groq_clients_from_env(prefer_alt_first=prefer_alt_key_first)
 
-    prompt = (
-        "Esta página trata sobre un evento. Extraé el nombre de la entidad organizadora principal tal como aparece en el texto. "
-        "No incluyas encabezados ni texto adicional. "
-        "Este es el contenido de la página:\n\n"
+    prompt_prefix = (
+        "Esta página trata sobre un evento. Extraé el nombre de la entidad organizadora "
+        "principal tal como aparece en el texto. No incluyas encabezados ni texto adicional.\n\n"
+        "Contenido de la página:\n\n"
     )
 
     for index, row in df_eventos.iterrows():
+        url = row.get("sitioWeb", "")
         try:
-            url = row.get("sitioWeb", "")
             if not url or not isinstance(url, str):
                 raise ValueError("URL inválida")
 
-            response = requests.get(url, timeout=10)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.text, 'html.parser')
+            cleaned_text = extract_clean_text_from_url(url)
+            prompt = prompt_prefix + cleaned_text
 
-            for script_or_style in soup(["script", "style"]):
-                script_or_style.decompose()
-
-            text_content = soup.get_text()
-            lines = (line.strip() for line_cnt, line in enumerate(
-                text_content.splitlines()) if line_cnt < 1000)
-            chunks = (phrase.strip() for phrase in ' '.join(lines).split("  "))
-            cleaned_text = '\n'.join(chunk for chunk in chunks if chunk)
-
-            max_chars = 15000
-            if len(cleaned_text) > max_chars:
-                cleaned_text = cleaned_text[:max_chars] + "\n... [Contenido truncado]"
-
-            llm_response = llm_client.chat.completions.create(
-                model="gemma2-9b-it",
-                messages=[{"role": "user", "content": prompt + cleaned_text}]
+            content, used_model, used_key = llm_complete_with_failover(
+                prompt=prompt,
+                clients=clients,
+                modelos=modelos,
+                max_retries_per_model=1,
+                base_backoff_seconds=2.0,
             )
 
-            entidad_raw = llm_response.choices[0].message.content.strip()
-            mejor_match, score = process.extractOne(entidad_raw, entidades)
+            if not content:
+                raise RuntimeError("LLM no devolvió contenido.")
+
+            entidad_raw = content.strip()
+            best = process.extractOne(entidad_raw, entidades)
+            mejor_match, score = (best if best else ("", 0))
 
             if score >= 90:
                 entidad_final = mejor_match
@@ -56,20 +67,14 @@ def asignar_entidades_organizadoras(df_eventos, df_organizaciones, llm_client):
             df_eventos.at[index, "matchScore"] = score
             df_eventos.at[index, "requiereRevision"] = revision
 
-            print(f"✔ [{index}] '{entidad_raw}' → '{entidad_final}' (score: {score})")
-
-        except RateLimitError:
-            print(f"Límite de API alcanzado en el índice {index}. Deteniendo el procesamiento.")
-            break
+            print(f"✔ [{index}] '{entidad_raw}' → '{entidad_final}' (score: {score}) [{used_key}:{used_model}]")
 
         except Exception as e:
-            print(f"❌ Error en índice {index}: {e}")
+            print(f"❌ Error en índice {index} (url={url}): {e}")
             df_eventos.at[index, "entidadOriginalLLM"] = "ERROR"
             df_eventos.at[index, "entidadOrganizadora"] = "ERROR"
             df_eventos.at[index, "matchScore"] = 0
             df_eventos.at[index, "requiereRevision"] = "Sí"
-    
-    df_eventos.to_csv("./data/eventos_con_entidades.csv", sep=";", index=False)
 
+    df_eventos.to_csv(write_csv_path, sep=";", index=False)
     return df_eventos
-

@@ -1,5 +1,4 @@
 from sqlalchemy import Column, Integer, String, Date, Text
-from sqlalchemy.orm import relationship
 from config.dbconfig import Base
 
 class Evento (Base):
@@ -20,6 +19,7 @@ class Evento (Base):
     dia_fin = Column(String(255), nullable=False, default="Desconocido")
     fecha_texto = Column(String(255), nullable=False, default="Desconocida")
     sede = Column(Text, nullable=False, default="Desconocida")
+    categoria = Column(String(255), nullable=False, default="Académico")
     sitio_web = Column(String(255), nullable=False, default="Desconocido")
     entidad_organizadora = Column(String(255), nullable=False, default="Desconocida")
     requiere_revision = Column(String(255), nullable=False, default=True)

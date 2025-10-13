@@ -14,6 +14,18 @@ def mapear_tipo_evento(valor_extraido):
     return "Otro tipo de evento"
 
 
+def mapear_categoria(valor_extraido):
+    lista_categorias = [
+        "Académico", "Asociativo", "Corporativo", "Gubernamental"
+    ]
+
+    for categoria in lista_categorias:
+        if categoria.lower() in valor_extraido.lower():
+            return categoria
+
+    return "Académico"
+
+
 def mapear_detalle_rotacion(valor_extraido):
     lista_rotacion = [
         "Local", "Provincial", "Nacional - Regional (Patagonia)", "Nacional - Regional (NOA)",
@@ -64,8 +76,9 @@ def mapear_tema(valor_extraido):
 
 def procesar_respuesta(raw_response, url, sedes_df):
     """
-    Mapea los campos de la respuesta cruda a los campos del objeto JSON Evento.
+    Mapea los campos de la respuesta cruda a los campos del objeto JSON.
     """
+    
     raw_response = limpiar_raw_response(raw_response)
 
     try:
@@ -89,16 +102,14 @@ def procesar_respuesta(raw_response, url, sedes_df):
         'dia_fin': datos.get('diaFinalRaw', 'Desconocido'),
         'fecha_texto': datos.get('fechaRaw', 'Desconocida'),
         'sitioWeb': url,
-        'categoria': "Académico",
+        'categoria': datos.get('categoria', 'Académico'),
         'frecuencia': "Anual",
         'agrupacion': datos.get('agrupacion', 'Desconocido'),
         'provincia': "Mendoza",
         'entidadOrganizadora': "-",
-        # Mantenemos el campo raw de la sede
         'sedeRaw': datos.get('sedeRaw', 'Desconocido')
     }
 
-    # El campo 'Localidad' del LLM se usa para buscar la 'localidad' final
     nombre_sede_extraido = datos.get('Localidad', '')
     procesado['localidad'] = buscar_localidad_sede(
         nombre_sede_extraido, sedes_df)
@@ -154,7 +165,6 @@ def formatear_fecha(fecha_str):
         except Exception as e:
             print(f"Error al parsear fecha '{fecha_str}': {e}")
             pass
-    # Si no se pudo convertir, se retorna None para que SQLAlchemy inserte NULL
     return None
 
 

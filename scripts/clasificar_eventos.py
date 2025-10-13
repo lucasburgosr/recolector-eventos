@@ -1,69 +1,133 @@
-from groq import Groq, RateLimitError
+from groq import RateLimitError
 from sqlalchemy.exc import SQLAlchemyError
 from google.api_core import exceptions
 from bs4 import BeautifulSoup
 import requests
-from dotenv import load_dotenv
-from IPython.display import Markdown
-import textwrap
-import google.generativeai as genai
 import os
 import sys
 import pandas as pd
-import json
 import time
+from groq import Groq
 
 proyecto_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(proyecto_dir)
 
 from models.evento_reuniones import Evento
-from config.dbconfig import session
 
-load_dotenv()
+modelos_groq = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
 
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+_client_global = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
 
-def to_markdown(text):
-    text = text.replace('•', '  *')
-    return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
-
-
-GROQ_API_KEY = os.getenv("EMETUR_GROQ_API_KEY")
-client = Groq(api_key=GROQ_API_KEY)
-
-
-def extraer_contenido_web(url):
+def extraer_contenido_web(url: str) -> str | None:
+    """
+    Extrae el contenido textual principal de una URL de forma inteligente.
+    
+    Busca en orden jerárquico las etiquetas <main>, <article> y, como último
+    recurso, el <body> para aislar el contenido relevante y descartar
+    menús, barras laterales y pies de página.
+    """
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=15)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        for script_or_style in soup(['script', 'style']):
-            script_or_style.decompose()
+        for element in soup(['script', 'style', 'nav', 'footer', 'aside']):
+            element.decompose()
 
-        text_content = soup.get_text()
+        if soup.main:
+            content_container = soup.main
+        elif soup.article:
+            content_container = soup.article
+        elif soup.find('div', {'id': 'content'}):
+            content_container = soup.find('div', {'id': 'content'})
+        elif soup.find('div', {'class': 'content'}):
+            content_container = soup.find('div', {'class': 'content'})
+        else:
+            content_container = soup.body
 
-        lines = (line.strip() for line_cnt, line in enumerate(
-            text_content.splitlines()) if line_cnt < 1000)
-        chunks = (phrase.strip() for phrase in ' '.join(lines).split("  "))
-        cleaned_text = '\n'.join(chunk for chunk in chunks if chunk)
+        if not content_container:
+            return None
+
+        cleaned_text = content_container.get_text(separator=' ', strip=True)
 
         max_chars = 15000
         if len(cleaned_text) > max_chars:
+            print(f"    -> Contenido principal aún es largo ({len(cleaned_text)}). Truncando.")
             cleaned_text = cleaned_text[:max_chars] + \
-                "\n... [Contenido truncado para brevedad]"
+                         "\n... [Contenido principal truncado]"
 
         return cleaned_text
+
     except requests.exceptions.RequestException as e:
-        print(f"Error al acceder a la URL {url}: {e}")
+        print(f"Error de red al acceder a la URL {url}: {e}")
         return None
     except Exception as e:
-        print(f"Error al procesar el contenido de {url}: {e}")
+        print(f"Error inesperado al procesar el contenido de {url}: {e}")
         return None
 
 
-def extraer_datos_evento(contenido_web):
+def _call_groq_with_fallback(
+    prompt: str,
+    client: Groq,
+    modelos: list[str],
+    max_retries_per_model: int = 2,
+    base_backoff_seconds: float = 3.0,
+) -> tuple[str | None, str | None]:
+    """
+    Intenta completar con cada modelo en `modelos` en orden.
+    - Reintenta `max_retries_per_model` veces por modelo ante RateLimitError (429)
+      con backoff exponencial.
+    - Ante otros errores no-429, pasa al siguiente modelo.
+    Devuelve (content, modelo_usado) o (None, None) si todos fallan.
+    """
+    for model in modelos:
+        for attempt in range(max_retries_per_model + 1):
+            try:
+                resp = client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}],
+                )
+                content = resp.choices[0].message.content
+                print(f"[OK] Modelo {model} respondió. (len={len(content) if content else 0})")
+                return content, model
+
+            except RateLimitError as e:
+                print(f"[429] Rate limit en modelo {model} (intento {attempt+1}/{max_retries_per_model+1}). {e}")
+                if attempt < max_retries_per_model:
+                    sleep_s = base_backoff_seconds * (2 ** attempt)
+                    print(f" - Esperando {sleep_s:.1f}s y reintentando con {model}...")
+                    time.sleep(sleep_s)
+                    continue
+                else:
+                    print(f" - Agotados reintentos para {model}. Probando el siguiente modelo...")
+                    break
+
+            except exceptions.ResourceExhausted as e:
+                print(f"[Quota] Recurso agotado en {model}: {e}. Pasando al siguiente modelo...")
+                break
+
+            except Exception as e:
+                print(f"[Error] Modelo {model} falló: {e}. Probando el siguiente modelo...")
+                break
+
+    print("[FAIL] Todos los modelos fallaron o alcanzaron rate limit.")
+    return None, None
+
+
+def extraer_datos_evento(contenido_web: str, client: Groq | None = None, modelos: list[str] | None = None) -> str | None:
+    """
+    Orquesta el llamado al LLM con fallback de modelos.
+    Devuelve el 'content' del LLM (string).
+    """
     if not contenido_web:
         return None
+    
+    _client = client or _client_global
+    if _client is None:
+        raise RuntimeError("No hay cliente Groq disponible. Configurá GROQ_API_KEY o pasá 'client=' explícitamente.")
+
+    _modelos = modelos or modelos_groq
 
     prompt = (
         f"Se trata de un evento en el ámbito de turismo de reuniones, congresos y convenciones.\n"
@@ -98,31 +162,31 @@ def extraer_datos_evento(contenido_web):
         "CONGRESOS Y CONVENCIONES: Asamblea, Conferencia, Congreso, Convención, Encuentro, Foro, Jornada, Seminario, Simposio \n"
         "FERIAS Y EXPOSICIONES: Exposición, Feria, Workshop \n"
         "FUERA DEL ALCANCE DEL OETR: Evento Deportivo Internacional, Incentivo, Evento Cultural, Evento Deportivo Nacional, Otro tipo de evento"
+        "11. categoria: Indica a que categoría pertenece cada evento. Estas son las opciones: Académico, Asociativo, Corporativo, Gubernamental"
         "Devuélveme únicamente la información en formato JSON, sin etiquetas ni formateos adicionales."
     )
 
-    try:
-        response = client.chat.completions.create(
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ],
-            model="gemma2-9b-it"
-        )
-        print(response.choices[0].message.content)
-        return response.choices[0].message.content
-    except RateLimitError:
-        raise
-    except exceptions.ResourceExhausted:
-        raise
-    except Exception as e:
-        print(f"Error al generar contenido con el modelo: {e}")
+    content, used_model = _call_groq_with_fallback(
+        prompt=prompt,
+        client=_client,
+        modelos=_modelos,
+        max_retries_per_model=2,
+        base_backoff_seconds=3.0,
+    )
+
+    if content is None:
         return None
+
+    print(f"Respuesta cruda del LLM (modelo {used_model}):")
+    print(content)
+    return content
 
 
 def guardar_eventos(df, session):
+    """
+    Mapea los valores de cada objeto JSON a la propiedad que le corresponde en el objeto
+    Evento. Añade el evento y, en caso de no haber errores, continúa al commit.
+    """
     print("\n--- Intentando insertar datos en la base de datos MySQL ---")
     if df.empty:
         print("El DataFrame está vacío. No hay datos para insertar.")
@@ -137,6 +201,7 @@ def guardar_eventos(df, session):
                 'agrupacion': row.get('agrupacion'),
                 'detalle_tipo_rotacion': row.get('detalle_tipo_rotacion'),
                 'tema': row.get('tema'),
+                'categoria': row.get('categoria'),
                 'fecha_edicion': pd.to_datetime(row.get('fecha_edicion'), errors='coerce'),
                 'fecha_inicio': pd.to_datetime(row.get('fecha_inicio'), errors='coerce'),
                 'fecha_fin': pd.to_datetime(row.get('fecha_fin'), errors='coerce'),
@@ -168,94 +233,3 @@ def guardar_eventos(df, session):
     except SQLAlchemyError as e:
         session.rollback()
         print(f"Error final al comitear: {e}. Revirtiendo...")
-
-
-def procesar_eventos_de_links():
-    try:
-        df_links = pd.read_csv("./data/links_eventos_revisados.csv", sep=";")
-    except FileNotFoundError:
-        print("Error: No se encontró el archivo 'links_eventos_revisados.csv'. Ejecute revisar_links.py primero.")
-        return
-
-    eventos_procesados = []
-    output_filename = f"./data/eventos_procesados_{time.strftime('%Y%m%d_%H%M%S')}.csv"
-
-    try:
-        for index, row in df_links.iterrows():
-            print(f"Procesando link {index + 1}/{len(df_links)}: {row['link']}")
-            contenido_web = extraer_contenido_web(row['link'])
-            if not contenido_web:
-                continue
-
-            datos_evento_str = extraer_datos_evento(contenido_web)
-            if datos_evento_str:
-                try:
-                    if datos_evento_str.startswith("```json"):
-                        datos_evento_str = datos_evento_str[7:-4].strip()
-                    
-                    datos_evento_json = json.loads(datos_evento_str)
-                    datos_evento_json['sitioWeb'] = row['link']
-                    eventos_procesados.append(datos_evento_json)
-                except json.JSONDecodeError:
-                    print(f"Error al decodificar JSON para el link {row['link']}")
-                    print(f"Respuesta recibida: {datos_evento_str}")
-                    continue
-    
-    except (RateLimitError, exceptions.ResourceExhausted):
-        print("Límite de API alcanzado. Guardando los eventos procesados hasta ahora.")
-    
-    finally:
-        if eventos_procesados:
-            df_eventos = pd.DataFrame(eventos_procesados)
-            df_eventos.to_csv(output_filename, sep=";", index=False)
-            print(f"✅ Se guardaron {len(eventos_procesados)} eventos en {output_filename}")
-            
-            column_mapping = {
-                'nombreEvento': 'nombre', 'tipoEvento': 'tipo', 'detalleTipoRotacion': 'detalle_tipo_rotacion',
-                'tema': 'tema', 'fechaEdicion': 'fecha_edicion', 'fechaInicio': 'fecha_inicio',
-                'fechaFinalizacion': 'fecha_fin', 'añoRaw': 'anio', 'mesLiteralRaw': 'mes',
-                'diaInicioRaw': 'dia_inicio', 'diaFinalRaw': 'dia_fin', 'fechaRaw': 'fecha_texto',
-                'sedeRaw': 'sedeRaw', 'sitioWeb': 'sitio_web'
-            }
-            df_eventos.rename(columns=column_mapping, inplace=True)
-            
-            if 'entidadOrganizadora' not in df_eventos.columns:
-                df_eventos['entidadOrganizadora'] = None
-            if 'requiereRevision' not in df_eventos.columns:
-                df_eventos['requiereRevision'] = None
-
-        else:
-            print("No se procesaron eventos.")
-
-df_eventos = pd.read_csv("./data/links_eventos_revisados.csv", sep=";", low_memory=False)
-rows = []
-
-for _, row in df_eventos.iterrows():
-    try:
-        contenido_web = extraer_contenido_web(row['link'])
-        evento_clasificado = extraer_datos_evento(contenido_web)  # puede ser str JSON o dict
-
-        data = json.loads(evento_clasificado) if isinstance(evento_clasificado, str) else evento_clasificado
-        if not data:
-            continue
-
-        # data puede ser dict (una fila) o list[dict] (varias filas)
-        if isinstance(data, dict):
-            rows.append(data)
-        elif isinstance(data, list):
-            rows.extend(data)
-        else:
-            print("Formato no esperado:", type(data))
-            continue
-
-    except json.JSONDecodeError as e:
-        print("JSON inválido:", e)
-        continue
-    except Exception as e:
-        print("Error procesando link:", e)
-        continue
-
-df_clasificados = pd.json_normalize(rows) if rows else pd.DataFrame()
-df_clasificados.to_csv("./data/eventos_clasificados.csv", sep=";", index=False)
-
-    
