@@ -15,12 +15,12 @@ logging.basicConfig(level=logging.INFO)
 
 load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = os.getenv("PERSONAL_GROQ_API_KEY")
 EMETUR_API_KEY = os.getenv("EMETUR_GROQ_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 api_keys = {
-    "GROQ_API_KEY": GROQ_API_KEY,
+    "PERSONAL_GROQ_API_KEY": GROQ_API_KEY,
     "EMETUR_GROQ_API_KEY": EMETUR_API_KEY,
     "GEMINI_API_KEY": GEMINI_API_KEY,
 }

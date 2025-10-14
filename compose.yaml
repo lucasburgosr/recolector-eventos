@@ -1,0 +1,9 @@
+services:
+  scraper:
+    build: .
+    image: scraper_eventos:latest
+    command: ["python", "main.py"]
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data

@@ -25,7 +25,7 @@ def build_groq_clients_from_env(prefer_alt_first: bool = True) -> List[Tuple[str
     Devuelve lista de tuplas [(nombre_key, client), ...]
     """
     k1 = ("EMETUR_GROQ_API_KEY", os.getenv("EMETUR_GROQ_API_KEY"))
-    k2 = ("GROQ_API_KEY", os.getenv("GROQ_API_KEY"))
+    k2 = ("PERSONAL_GROQ_API_KEY", os.getenv("PERSONAL_GROQ_API_KEY"))
     ordered = [k1, k2] if prefer_alt_first else [k2, k1]
     clients = []
     for name, key in ordered:

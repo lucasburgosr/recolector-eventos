@@ -16,7 +16,7 @@ from models.evento_reuniones import Evento
 
 modelos_groq = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = os.getenv("PERSONAL_GROQ_API_KEY")
 _client_global = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
 
 def extraer_contenido_web(url: str) -> str | None:
