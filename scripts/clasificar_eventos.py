@@ -16,8 +16,7 @@ from models.evento_reuniones import Evento
 
 modelos_groq = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
 
-GROQ_API_KEY = os.getenv("PERSONAL_GROQ_API_KEY")
-_client_global = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 def extraer_contenido_web(url: str) -> str | None:
     """
@@ -122,10 +121,6 @@ def extraer_datos_evento(contenido_web: str, client: Groq | None = None, modelos
     """
     if not contenido_web:
         return None
-    
-    _client = client or _client_global
-    if _client is None:
-        raise RuntimeError("No hay cliente Groq disponible. Configurá GROQ_API_KEY o pasá 'client=' explícitamente.")
 
     _modelos = modelos or modelos_groq
 
@@ -163,12 +158,12 @@ def extraer_datos_evento(contenido_web: str, client: Groq | None = None, modelos
         "FERIAS Y EXPOSICIONES: Exposición, Feria, Workshop \n"
         "FUERA DEL ALCANCE DEL OETR: Evento Deportivo Internacional, Incentivo, Evento Cultural, Evento Deportivo Nacional, Otro tipo de evento"
         "11. categoria: Indica a que categoría pertenece cada evento. Estas son las opciones: Académico, Asociativo, Corporativo, Gubernamental"
-        "Devuélveme únicamente la información en formato JSON, sin etiquetas ni formateos adicionales."
+        "Devuélveme únicamente la información en formato JSON, sin explicaciones, etiquetas ni formateos adicionales."
     )
 
     content, used_model = _call_groq_with_fallback(
         prompt=prompt,
-        client=_client,
+        client=client,
         modelos=_modelos,
         max_retries_per_model=2,
         base_backoff_seconds=3.0,

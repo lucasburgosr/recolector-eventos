@@ -1,7 +1,7 @@
 from fuzzywuzzy import process
 import pandas as pd
+from clients import groq_client
 from .helpers_llm import (
-    build_groq_clients_from_env,
     extract_clean_text_from_url,
     llm_complete_with_failover,
     MODELOS_GROQ_DEFAULT,
@@ -11,7 +11,6 @@ def asignar_entidades_organizadoras(
     df_eventos: pd.DataFrame,
     df_organizaciones: pd.DataFrame,
     modelos=None,
-    prefer_alt_key_first: bool = True,
     write_csv_path: str = "./data/eventos_con_entidades.csv",
 ) -> pd.DataFrame:
     """
@@ -23,7 +22,7 @@ def asignar_entidades_organizadoras(
     """
     entidades = df_organizaciones["Entidad organizadores"].dropna().unique().tolist()
     modelos = modelos or MODELOS_GROQ_DEFAULT
-    clients = build_groq_clients_from_env(prefer_alt_first=prefer_alt_key_first)
+    client = groq_client
 
     prompt_prefix = (
         "Esta página trata sobre un evento. Extraé el nombre de la entidad organizadora "
@@ -42,7 +41,7 @@ def asignar_entidades_organizadoras(
 
             content, used_model, used_key = llm_complete_with_failover(
                 prompt=prompt,
-                clients=clients,
+                client=client,
                 modelos=modelos,
                 max_retries_per_model=1,
                 base_backoff_seconds=2.0,

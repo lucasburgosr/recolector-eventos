@@ -5,35 +5,14 @@ import requests
 from typing import List, Tuple, Optional
 from bs4 import BeautifulSoup
 from groq import Groq, RateLimitError
-from google.api_core import exceptions  # si no usás Gemini podés quitarlo
+from google.api_core import exceptions
 
-# Orden de preferencia de modelos para tareas de extracción cortas
 MODELOS_GROQ_DEFAULT = [
-    "llama-3.1-8b-instant",
-    "llama-3.3-70b-versatile",
     "openai/gpt-oss-20b",
     "openai/gpt-oss-120b",
+    "llama-3.1-8b-instant",
+    "llama-3.3-70b-versatile",
 ]
-
-def build_groq_clients_from_env(prefer_alt_first: bool = True) -> List[Tuple[str, Groq]]:
-    """
-    Crea una lista de clientes Groq a partir de:
-      - EMETUR_GROQ_API_KEY
-      - GROQ_API_KEY
-    Si `prefer_alt_first` es True, prioriza EMETUR primero (para evitar reutilizar
-    la misma cuota agotada en etapas previas).
-    Devuelve lista de tuplas [(nombre_key, client), ...]
-    """
-    k1 = ("EMETUR_GROQ_API_KEY", os.getenv("EMETUR_GROQ_API_KEY"))
-    k2 = ("PERSONAL_GROQ_API_KEY", os.getenv("PERSONAL_GROQ_API_KEY"))
-    ordered = [k1, k2] if prefer_alt_first else [k2, k1]
-    clients = []
-    for name, key in ordered:
-        if key:
-            clients.append((name, Groq(api_key=key)))
-    if not clients:
-        raise RuntimeError("No se encontraron API keys de Groq en el entorno.")
-    return clients
 
 def extract_clean_text_from_url(
     url: str,
@@ -60,7 +39,7 @@ def extract_clean_text_from_url(
 
 def llm_complete_with_failover(
     prompt: str,
-    clients: List[Tuple[str, Groq]],
+    client: Groq,
     modelos: List[str] = None,
     max_retries_per_model: int = 1,
     base_backoff_seconds: float = 2.0,
@@ -72,36 +51,35 @@ def llm_complete_with_failover(
     """
     modelos = modelos or MODELOS_GROQ_DEFAULT
 
-    for key_name, client in clients:
-        for model in modelos:
-            for attempt in range(max_retries_per_model + 1):
-                try:
-                    resp = client.chat.completions.create(
-                        model=model,
-                        messages=[{"role": "user", "content": prompt}],
-                    )
-                    content = resp.choices[0].message.content
-                    print(f"[OK] {key_name}:{model} respondió (len={len(content) if content else 0}).")
-                    return content, model, key_name
+    for model in modelos:
+        for attempt in range(max_retries_per_model + 1):
+            try:
+                resp = client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}],
+                )
+                content = resp.choices[0].message.content
+                print(f"{model} respondió (len={len(content) if content else 0}).")
+                return content, model
 
-                except RateLimitError as e:
-                    print(f"[429] Rate limit en {key_name}:{model} (intento {attempt+1}/{max_retries_per_model+1}). {e}")
-                    if attempt < max_retries_per_model:
-                        sleep_s = base_backoff_seconds * (2 ** attempt)
-                        print(f" - Esperando {sleep_s:.1f}s y reintentando con {model} (misma key {key_name})...")
-                        time.sleep(sleep_s)
-                        continue
-                    else:
-                        print(f" - Agotados reintentos para {model} en {key_name}. Probando siguiente modelo/clave...")
-                        break
-
-                except exceptions.ResourceExhausted as e:
-                    print(f"[Quota] Recurso agotado en {key_name}:{model}: {e}. Probando siguiente modelo/clave...")
+            except RateLimitError as e:
+                print(f"[429] Rate limit en {model} (intento {attempt+1}/{max_retries_per_model+1}). {e}")
+                if attempt < max_retries_per_model:
+                    sleep_s = base_backoff_seconds * (2 ** attempt)
+                    print(f" - Esperando {sleep_s:.1f}s y reintentando con {model}...")
+                    time.sleep(sleep_s)
+                    continue
+                else:
+                    print(f" - Agotados reintentos para {model}. Probando siguiente modelo...")
                     break
 
-                except Exception as e:
-                    print(f"[Error] {key_name}:{model} falló: {e}. Probando siguiente modelo/clave...")
-                    break
+            except exceptions.ResourceExhausted as e:
+                print(f"[Quota] Recurso agotado en:{model}: {e}. Probando siguiente modelo/clave...")
+                break
+
+            except Exception as e:
+                print(f"[Error] {model} falló: {e}. Probando siguiente modelo/clave...")
+                break
 
     print("[FAIL] Todas las combinaciones (key, modelo) fallaron o alcanzaron rate limit.")
     return None, None, None

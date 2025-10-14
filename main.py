@@ -1,10 +1,10 @@
 import pandas as pd
 import time, os, logging
 from datetime import datetime
-# from scripts.search import busqueda_eventos
+from scripts.search import busqueda_eventos
 from scripts.clasificar_eventos import extraer_contenido_web, extraer_datos_evento, guardar_eventos
 from scripts.procesar_eventos import procesar_respuesta
-# from scripts.revisar_links import revisar_links
+from scripts.revisar_links import revisar_links
 from scripts.correccion_sedes import corregir_sedes
 from scripts.asignar_entidad import asignar_entidades_organizadoras
 from dotenv import load_dotenv
@@ -15,13 +15,12 @@ logging.basicConfig(level=logging.INFO)
 
 load_dotenv()
 
-GROQ_API_KEY = os.getenv("PERSONAL_GROQ_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 EMETUR_API_KEY = os.getenv("EMETUR_GROQ_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 api_keys = {
-    "PERSONAL_GROQ_API_KEY": GROQ_API_KEY,
-    "EMETUR_GROQ_API_KEY": EMETUR_API_KEY,
+    "GROQ_API_KEY": GROQ_API_KEY,
     "GEMINI_API_KEY": GEMINI_API_KEY,
 }
 
@@ -34,10 +33,10 @@ if __name__ == '__main__':
     print("Ejecutamos el main actual")
 
     # Obtenemos la lista de links y títulos en el archivo resultados_busqueda.csv
-    # busqueda_eventos()
+    busqueda_eventos()
 
     # Revisamos los links y generamos el archivo links_eventos_revisados.csv
-    # revisar_links()
+    revisar_links()
 
     # Obtenemos los links revisados
     urls_df = pd.read_csv(

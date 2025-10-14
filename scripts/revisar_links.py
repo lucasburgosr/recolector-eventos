@@ -1,23 +1,19 @@
-from groq import Groq, RateLimitError, APIStatusError
+from groq import RateLimitError, APIStatusError
 import pandas as pd
 import time
-from dotenv import load_dotenv
-import os, json, requests
-from bs4 import BeautifulSoup
-
-load_dotenv()
-
-client = Groq(api_key=os.getenv("PERSONAL_GROQ_API_KEY"))
-
-# modelos_groq = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
-
+import json
 import requests
+from clients import groq_client
 from bs4 import BeautifulSoup
+
+groq_client = groq_client
+ 
+# modelos_groq = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
 
 def _extraer_contenido_web(url: str) -> str | None:
     """
     Extrae el contenido textual principal de una URL de forma inteligente.
-    
+
     Busca en orden jerárquico las etiquetas <main>, <article> y, como último
     recurso, el <body> para aislar el contenido relevante y descartar
     menús, barras laterales y pies de página.
@@ -48,9 +44,10 @@ def _extraer_contenido_web(url: str) -> str | None:
 
         max_chars = 15000
         if len(cleaned_text) > max_chars:
-            print(f"    -> Contenido principal aún es largo ({len(cleaned_text)}). Truncando.")
+            print(
+                f"    -> Contenido principal aún es largo ({len(cleaned_text)}). Truncando.")
             cleaned_text = cleaned_text[:max_chars] + \
-                         "\n... [Contenido principal truncado]"
+                "\n... [Contenido principal truncado]"
 
         return cleaned_text
 
@@ -60,10 +57,12 @@ def _extraer_contenido_web(url: str) -> str | None:
     except Exception as e:
         print(f"Error inesperado al procesar el contenido de {url}: {e}")
         return None
-    
+
+
 def _guardar_progreso(index: int):
     with open("./data/progreso_revision_links.txt", 'w') as f:
         f.write(str(index))
+
 
 def revisar_links():
     """
@@ -72,11 +71,12 @@ def revisar_links():
     Genera un archivo CSV con los links que pasaron el filtro.
     """
     try:
-        df = pd.read_csv("./data/resultados_busqueda.csv", sep=";", low_memory=False)
+        df = pd.read_csv("./data/resultados_busqueda.csv",
+                         sep=";", low_memory=False)
     except FileNotFoundError:
         print("No se encontró el archivo ./data/resultados_busqueda.csv. Ejecute search.py primero.")
         return
-    
+
     start_index = 0
     progreso = "./data/progreso_revision_links.txt"
     try:
@@ -88,18 +88,18 @@ def revisar_links():
         print("No se encontró archivo de progreso. Empezando desde el principio.")
     except ValueError:
         print("El archivo está dañado. Empezando desde el principio.")
-        
+
     lineas = []
     for index, row in df.iloc[start_index:].iterrows():
-        
+
         titulo = row['title']
         link = row['link']
-        
+
         contenido_web = _extraer_contenido_web(link)
-        
+
         if contenido_web is None:
             continue
-        
+
         print(f"Cantidad de caracteres: {len(contenido_web)}")
 
         prompt = (
@@ -125,7 +125,7 @@ def revisar_links():
 
         try:
             print(f"Revisando link {index + 1}/{len(df)}: {link}")
-            response = client.chat.completions.create(
+            response = groq_client.chat.completions.create(
                 messages=[
                     {
                         "role": "system",
@@ -153,7 +153,7 @@ def revisar_links():
                 print("La respuesta del LLM no es un JSON válido.")
                 print(f"{e}")
                 continue
-            
+
             time.sleep(2)
 
         except (RateLimitError, APIStatusError) as e:
@@ -162,14 +162,18 @@ def revisar_links():
             _guardar_progreso(index=index)
             break
         except json.JSONDecodeError:
-            print(f"Error al parsear JSON en link: {link}. Contenido: {contenido}")
+            print(
+                f"Error al parsear JSON en link: {link}. Contenido: {contenido}")
             continue
 
     if lineas:
         datos = pd.DataFrame(lineas)
-        datos.to_csv("./data/links_eventos_revisados.csv", sep=";", index=False, mode='a')
-        print(f"----\nSe guardaron {len(lineas)} links revisados en ./data/links_eventos_revisados.csv\n----")
+        datos.to_csv("./data/links_eventos_revisados.csv",
+                     sep=";", index=False, mode='a')
+        print(
+            f"----\nSe guardaron {len(lineas)} links revisados en ./data/links_eventos_revisados.csv\n----")
     else:
         print("----\nNo se procesaron nuevos links o no hubo links válidos para guardar.\n----")
-        
+
+
 revisar_links()
