@@ -1,33 +1,20 @@
 import pandas as pd
-import time, os, logging
+import time
 from datetime import datetime
 from scripts.search import busqueda_eventos
-from scripts.clasificar_eventos import extraer_contenido_web, extraer_datos_evento, guardar_eventos
+from scripts.clasificar_eventos import extraer_datos_evento, guardar_eventos
+from scripts.helpers_llm import extraer_contenido_web
 from scripts.procesar_eventos import procesar_respuesta
 from scripts.revisar_links import revisar_links
 from scripts.correccion_sedes import corregir_sedes
 from scripts.asignar_entidad import asignar_entidades_organizadoras
-from dotenv import load_dotenv
-from groq import Groq
 from config.dbconfig import session
-
-logging.basicConfig(level=logging.INFO)
-
-load_dotenv()
-
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-EMETUR_API_KEY = os.getenv("EMETUR_GROQ_API_KEY")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-api_keys = {
-    "GROQ_API_KEY": GROQ_API_KEY,
-    "GEMINI_API_KEY": GEMINI_API_KEY,
-}
-
-client = Groq(api_key=GROQ_API_KEY)
+from clients import cerebras_client, groq_client
 
 if __name__ == '__main__':
 
+    # Esta línea se necesita solo la primera vez para que se creen las tablas en
+    # la DB.
     """ Base.metadata.create_all(engine) """
     
     print("Ejecutamos el main actual")
@@ -36,7 +23,7 @@ if __name__ == '__main__':
     busqueda_eventos()
 
     # Revisamos los links y generamos el archivo links_eventos_revisados.csv
-    revisar_links()
+    revisar_links(groq_client=groq_client)
 
     # Obtenemos los links revisados
     urls_df = pd.read_csv(
@@ -53,7 +40,7 @@ if __name__ == '__main__':
         if contenido_web:
             try:
                 raw_response = extraer_datos_evento(
-                    contenido_web, client=client)
+                    contenido_web, client=cerebras_client)
 
                 if raw_response:
                     print("Respuesta cruda del LLM:", raw_response)
@@ -79,8 +66,8 @@ if __name__ == '__main__':
     df_organizaciones = pd.read_csv(
         "./data/organizadores_normalizado.csv", low_memory=False, sep=";")
 
-    """ Este bloque itera sobre los eventos procesados e intenta chequear sedes y organizadores
-    con un LLM + fuzzy matching. Por último, almacena todo en la base de datos y en un archivo CSV. """
+    # Este bloque itera sobre los eventos procesados e intenta chequear sedes y organizadores
+    # con un LLM + fuzzy matching. Por último, almacena todo en la base de datos y en un archivo CSV.
     if datos_eventos_filtrados:
         df_eventos = pd.DataFrame(datos_eventos_filtrados)
 

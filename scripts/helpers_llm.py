@@ -1,11 +1,7 @@
-# === helpers_llm.py (o dejalo al tope de tu script) ===
-import os
 import time
 import requests
-from typing import List, Tuple, Optional
+from typing import List, Tuple, Optional, Any
 from bs4 import BeautifulSoup
-from groq import Groq, RateLimitError
-from google.api_core import exceptions
 
 MODELOS_GROQ_DEFAULT = [
     "openai/gpt-oss-20b",
@@ -14,43 +10,78 @@ MODELOS_GROQ_DEFAULT = [
     "llama-3.3-70b-versatile",
 ]
 
-def extract_clean_text_from_url(
-    url: str,
-    timeout: float = 12.0,
-    max_chars: int = 15000,
-    max_lines: int = 1000,
-) -> str:
-    """
-    Descarga HTML y devuelve texto limpio, truncado de forma segura.
-    """
-    resp = requests.get(url, timeout=timeout)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
-    for tag in soup(["script", "style", "noscript"]):
-        tag.decompose()
-    text_content = soup.get_text(separator="\n")
-    # Limitar líneas para evitar textos infinitos
-    lines = (line.strip() for i, line in enumerate(text_content.splitlines()) if i < max_lines)
-    compact = " ".join(lines)
-    cleaned_text = "\n".join(chunk.strip() for chunk in compact.split("  ") if chunk.strip())
-    if len(cleaned_text) > max_chars:
-        cleaned_text = cleaned_text[:max_chars] + "\n... [Contenido truncado]"
-    return cleaned_text
+MODELOS_CEREBRAS_DEFAULT = [
+    "gpt-oss-120b", "llama-3.3-70b", "llama3.1-8b", "llama-4-scout-17b-16e-instruct"
+]
 
-def llm_complete_with_failover(
+
+def extraer_contenido_web(url: str) -> str | None:
+    """
+    Extrae el contenido textual principal de una URL de forma inteligente.
+
+    Busca en orden jerárquico las etiquetas <main>, <article> y, como último
+    recurso, el <body> para aislar el contenido relevante y descartar
+    menús, barras laterales y pies de página.
+    """
+    try:
+        response = requests.get(url, timeout=15)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        for element in soup(['script', 'style', 'nav', 'footer', 'aside']):
+            element.decompose()
+
+        if soup.main:
+            content_container = soup.main
+        elif soup.article:
+            content_container = soup.article
+        elif soup.find('div', {'id': 'content'}):
+            content_container = soup.find('div', {'id': 'content'})
+        elif soup.find('div', {'class': 'content'}):
+            content_container = soup.find('div', {'class': 'content'})
+        else:
+            content_container = soup.body
+
+        if not content_container:
+            return None
+
+        cleaned_text = content_container.get_text(separator=' ', strip=True)
+
+        max_chars = 15000
+        if len(cleaned_text) > max_chars:
+            print(
+                f"    -> Contenido principal aún es largo ({len(cleaned_text)}). Truncando.")
+            cleaned_text = cleaned_text[:max_chars] + \
+                "\n... [Contenido principal truncado]"
+
+        return cleaned_text
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error de red al acceder a la URL {url}: {e}")
+        return None
+    except Exception as e:
+        print(f"Error inesperado al procesar el contenido de {url}: {e}")
+        return None
+
+
+def llamar_llm_con_fallback(
     prompt: str,
-    client: Groq,
-    modelos: List[str] = None,
-    max_retries_per_model: int = 1,
-    base_backoff_seconds: float = 2.0,
-) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+    client: Any,
+    modelos: List[str],
+    max_retries_per_model: int = 2,
+    base_backoff_seconds: float = 3.0,
+) -> Tuple[Optional[str], Optional[str]]:
     """
-    Intenta completar con todos los modelos en todos los clientes (API keys) en orden.
-    Reintenta por modelo ante 429 con backoff exponencial.
-    Devuelve (content, modelo_usado, nombre_api_key) o (None, None, None).
-    """
-    modelos = modelos or MODELOS_GROQ_DEFAULT
+    Intenta obtener una completion de un LLM usando una lista de modelos.
 
+    Maneja fallos y rate limits de forma inteligente:
+    - Si el error es por un límite diario (TPD), salta inmediatamente al siguiente modelo.
+    - Si el error es a corto plazo (TPM/RPM), reintenta con backoff exponencial.
+    - Ante otros errores, pasa al siguiente modelo.
+
+    Return:
+        Una tupla (contenido_respuesta, modelo_usado) o (None, None) si todo falla.
+    """
     for model in modelos:
         for attempt in range(max_retries_per_model + 1):
             try:
@@ -59,27 +90,31 @@ def llm_complete_with_failover(
                     messages=[{"role": "user", "content": prompt}],
                 )
                 content = resp.choices[0].message.content
-                print(f"{model} respondió (len={len(content) if content else 0}).")
+                print(f"✅ [OK] Modelo '{model}' respondió exitosamente.")
                 return content, model
 
-            except RateLimitError as e:
-                print(f"[429] Rate limit en {model} (intento {attempt+1}/{max_retries_per_model+1}). {e}")
-                if attempt < max_retries_per_model:
-                    sleep_s = base_backoff_seconds * (2 ** attempt)
-                    print(f" - Esperando {sleep_s:.1f}s y reintentando con {model}...")
-                    time.sleep(sleep_s)
-                    continue
+            except Exception as e:
+                if "RateLimitError" in type(e).__name__:
+                    error_message = str(e).lower()
+                    if "day" in error_message or "daily" in error_message:
+                        print(
+                            f"[TPD] Límite diario alcanzado para '{model}'. Saltando al siguiente modelo.")
+                        break
+                    print(
+                        f"[429] Rate limit en '{model}' (intento {attempt+1}/{max_retries_per_model+1}).")
+                    if attempt < max_retries_per_model:
+                        sleep_s = base_backoff_seconds * (2 ** attempt)
+                        print(f"Esperando {sleep_s:.1f}s para reintentar...")
+                        time.sleep(sleep_s)
+                        continue
+                    else:
+                        print(f"Reintentos agotados para '{model}'.")
+                        break
+
                 else:
-                    print(f" - Agotados reintentos para {model}. Probando siguiente modelo...")
+                    print(f"Fallo en '{model}': {type(e).__name__} - {e}.")
+                    print("Pasando al siguiente modelo...")
                     break
 
-            except exceptions.ResourceExhausted as e:
-                print(f"[Quota] Recurso agotado en:{model}: {e}. Probando siguiente modelo/clave...")
-                break
-
-            except Exception as e:
-                print(f"[Error] {model} falló: {e}. Probando siguiente modelo/clave...")
-                break
-
-    print("[FAIL] Todas las combinaciones (key, modelo) fallaron o alcanzaron rate limit.")
-    return None, None, None
+    print("Todos los modelos disponibles fallaron o alcanzaron sus límites.")
+    return None, None

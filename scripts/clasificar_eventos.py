@@ -1,128 +1,24 @@
-from groq import RateLimitError
 from sqlalchemy.exc import SQLAlchemyError
-from google.api_core import exceptions
-from bs4 import BeautifulSoup
-import requests
+from cerebras.cloud.sdk import Cerebras
 import os
 import sys
 import pandas as pd
-import time
-from groq import Groq
+from .helpers_llm import llamar_llm_con_fallback, MODELOS_CEREBRAS_DEFAULT
 
 proyecto_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(proyecto_dir)
 
 from models.evento_reuniones import Evento
 
-modelos_groq = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
+modelos = MODELOS_CEREBRAS_DEFAULT
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
-def extraer_contenido_web(url: str) -> str | None:
-    """
-    Extrae el contenido textual principal de una URL de forma inteligente.
-    
-    Busca en orden jerárquico las etiquetas <main>, <article> y, como último
-    recurso, el <body> para aislar el contenido relevante y descartar
-    menús, barras laterales y pies de página.
-    """
-    try:
-        response = requests.get(url, timeout=15)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
-
-        for element in soup(['script', 'style', 'nav', 'footer', 'aside']):
-            element.decompose()
-
-        if soup.main:
-            content_container = soup.main
-        elif soup.article:
-            content_container = soup.article
-        elif soup.find('div', {'id': 'content'}):
-            content_container = soup.find('div', {'id': 'content'})
-        elif soup.find('div', {'class': 'content'}):
-            content_container = soup.find('div', {'class': 'content'})
-        else:
-            content_container = soup.body
-
-        if not content_container:
-            return None
-
-        cleaned_text = content_container.get_text(separator=' ', strip=True)
-
-        max_chars = 15000
-        if len(cleaned_text) > max_chars:
-            print(f"    -> Contenido principal aún es largo ({len(cleaned_text)}). Truncando.")
-            cleaned_text = cleaned_text[:max_chars] + \
-                         "\n... [Contenido principal truncado]"
-
-        return cleaned_text
-
-    except requests.exceptions.RequestException as e:
-        print(f"Error de red al acceder a la URL {url}: {e}")
-        return None
-    except Exception as e:
-        print(f"Error inesperado al procesar el contenido de {url}: {e}")
-        return None
-
-
-def _call_groq_with_fallback(
-    prompt: str,
-    client: Groq,
-    modelos: list[str],
-    max_retries_per_model: int = 2,
-    base_backoff_seconds: float = 3.0,
-) -> tuple[str | None, str | None]:
-    """
-    Intenta completar con cada modelo en `modelos` en orden.
-    - Reintenta `max_retries_per_model` veces por modelo ante RateLimitError (429)
-      con backoff exponencial.
-    - Ante otros errores no-429, pasa al siguiente modelo.
-    Devuelve (content, modelo_usado) o (None, None) si todos fallan.
-    """
-    for model in modelos:
-        for attempt in range(max_retries_per_model + 1):
-            try:
-                resp = client.chat.completions.create(
-                    model=model,
-                    messages=[{"role": "user", "content": prompt}],
-                )
-                content = resp.choices[0].message.content
-                print(f"[OK] Modelo {model} respondió. (len={len(content) if content else 0})")
-                return content, model
-
-            except RateLimitError as e:
-                print(f"[429] Rate limit en modelo {model} (intento {attempt+1}/{max_retries_per_model+1}). {e}")
-                if attempt < max_retries_per_model:
-                    sleep_s = base_backoff_seconds * (2 ** attempt)
-                    print(f" - Esperando {sleep_s:.1f}s y reintentando con {model}...")
-                    time.sleep(sleep_s)
-                    continue
-                else:
-                    print(f" - Agotados reintentos para {model}. Probando el siguiente modelo...")
-                    break
-
-            except exceptions.ResourceExhausted as e:
-                print(f"[Quota] Recurso agotado en {model}: {e}. Pasando al siguiente modelo...")
-                break
-
-            except Exception as e:
-                print(f"[Error] Modelo {model} falló: {e}. Probando el siguiente modelo...")
-                break
-
-    print("[FAIL] Todos los modelos fallaron o alcanzaron rate limit.")
-    return None, None
-
-
-def extraer_datos_evento(contenido_web: str, client: Groq | None = None, modelos: list[str] | None = None) -> str | None:
+def extraer_datos_evento(contenido_web: str, client: Cerebras | None = None, modelos: list[str] | None = None) -> str | None:
     """
     Orquesta el llamado al LLM con fallback de modelos.
     Devuelve el 'content' del LLM (string).
     """
     if not contenido_web:
         return None
-
-    _modelos = modelos or modelos_groq
 
     prompt = (
         f"Se trata de un evento en el ámbito de turismo de reuniones, congresos y convenciones.\n"
@@ -161,10 +57,10 @@ def extraer_datos_evento(contenido_web: str, client: Groq | None = None, modelos
         "Devuélveme únicamente la información en formato JSON, sin explicaciones, etiquetas ni formateos adicionales."
     )
 
-    content, used_model = _call_groq_with_fallback(
+    content, used_model = llamar_llm_con_fallback(
         prompt=prompt,
         client=client,
-        modelos=_modelos,
+        modelos=modelos,
         max_retries_per_model=2,
         base_backoff_seconds=3.0,
     )

@@ -2,17 +2,15 @@
 import pandas as pd
 from fuzzywuzzy import process
 from .helpers_llm import (
-    build_groq_clients_from_env,
-    extract_clean_text_from_url,
-    llm_complete_with_failover,
-    MODELOS_GROQ_DEFAULT,
+    extraer_contenido_web,
+    llamar_llm_con_fallback,
 )
+from clients import cerebras_client
 
 def corregir_sedes(
     df_eventos: pd.DataFrame,
     df_sedes: pd.DataFrame,
     modelos=None,
-    prefer_alt_key_first: bool = True,
     write_csv_path: str = "./data/eventos_corregidos_sedes.csv",
 ) -> pd.DataFrame:
     """
@@ -21,8 +19,6 @@ def corregir_sedes(
     graba como NO_MATCH.
     """
     sedes_oficiales = df_sedes["Nombre"].dropna().unique().tolist()
-    modelos = modelos or MODELOS_GROQ_DEFAULT
-    clients = build_groq_clients_from_env(prefer_alt_first=prefer_alt_key_first)
 
     prompt_prefix = (
         "Esta página trata sobre un evento. Extraé el nombre de la sede o locación principal "
@@ -37,12 +33,12 @@ def corregir_sedes(
             if not url or not isinstance(url, str):
                 raise ValueError("URL inválida")
 
-            cleaned_text = extract_clean_text_from_url(url)
+            cleaned_text = extraer_contenido_web(url)
             prompt = prompt_prefix + cleaned_text
 
-            content, used_model, used_key = llm_complete_with_failover(
+            content, used_model, used_key = llamar_llm_con_fallback(
                 prompt=prompt,
-                clients=clients,
+                client=cerebras_client,
                 modelos=modelos,
                 max_retries_per_model=1,
                 base_backoff_seconds=2.0,

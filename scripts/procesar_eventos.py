@@ -1,7 +1,6 @@
 import json
 from datetime import datetime
 
-
 def mapear_tipo_evento(valor_extraido):
     lista_tipos = [
         "Asamblea", "Conferencia", "Congreso", "Convención", "Encuentro", "Foro", "Jornada",

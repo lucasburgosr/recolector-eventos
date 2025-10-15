@@ -2,8 +2,8 @@ from fuzzywuzzy import process
 import pandas as pd
 from clients import groq_client
 from .helpers_llm import (
-    extract_clean_text_from_url,
-    llm_complete_with_failover,
+    extraer_contenido_web,
+    llamar_llm_con_fallback,
     MODELOS_GROQ_DEFAULT,
 )
 
@@ -36,10 +36,10 @@ def asignar_entidades_organizadoras(
             if not url or not isinstance(url, str):
                 raise ValueError("URL inválida")
 
-            cleaned_text = extract_clean_text_from_url(url)
+            cleaned_text = extraer_contenido_web(url)
             prompt = prompt_prefix + cleaned_text
 
-            content, used_model, used_key = llm_complete_with_failover(
+            content, used_model, used_key = llamar_llm_con_fallback(
                 prompt=prompt,
                 client=client,
                 modelos=modelos,
@@ -66,10 +66,10 @@ def asignar_entidades_organizadoras(
             df_eventos.at[index, "matchScore"] = score
             df_eventos.at[index, "requiereRevision"] = revision
 
-            print(f"✔ [{index}] '{entidad_raw}' → '{entidad_final}' (score: {score}) [{used_key}:{used_model}]")
+            print(f"[{index}] '{entidad_raw}' → '{entidad_final}' (score: {score}) [{used_key}:{used_model}]")
 
         except Exception as e:
-            print(f"❌ Error en índice {index} (url={url}): {e}")
+            print(f"Error en índice {index} (url={url}): {e}")
             df_eventos.at[index, "entidadOriginalLLM"] = "ERROR"
             df_eventos.at[index, "entidadOrganizadora"] = "ERROR"
             df_eventos.at[index, "matchScore"] = 0
