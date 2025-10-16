@@ -19,6 +19,8 @@ def extraer_datos_evento(contenido_web: str, client: Cerebras | None = None, mod
     """
     if not contenido_web:
         return None
+    else:
+        print(f"El contenido llega correctamente {type(contenido_web)}")
 
     prompt = (
         f"Se trata de un evento en el ámbito de turismo de reuniones, congresos y convenciones.\n"
@@ -56,6 +58,8 @@ def extraer_datos_evento(contenido_web: str, client: Cerebras | None = None, mod
         "11. categoria: Indica a que categoría pertenece cada evento. Estas son las opciones: Académico, Asociativo, Corporativo, Gubernamental"
         "Devuélveme únicamente la información en formato JSON, sin explicaciones, etiquetas ni formateos adicionales."
     )
+
+    print("----- ENTRANDO A LA FUNCIÓN DE LLAMADA AL LLM")
 
     content, used_model = llamar_llm_con_fallback(
         prompt=prompt,

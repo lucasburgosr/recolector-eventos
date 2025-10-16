@@ -1,15 +1,16 @@
 import pandas as pd
 import time
 from datetime import datetime
-from scripts.search import busqueda_eventos
+# from scripts.search import busqueda_eventos
 from scripts.clasificar_eventos import extraer_datos_evento, guardar_eventos
 from scripts.helpers_llm import extraer_contenido_web
 from scripts.procesar_eventos import procesar_respuesta
-from scripts.revisar_links import revisar_links
+# from scripts.revisar_links import revisar_links
 from scripts.correccion_sedes import corregir_sedes
 from scripts.asignar_entidad import asignar_entidades_organizadoras
 from config.dbconfig import session
 from clients import cerebras_client, groq_client
+from scripts.helpers_llm import MODELOS_CEREBRAS_DEFAULT
 
 if __name__ == '__main__':
 
@@ -20,10 +21,10 @@ if __name__ == '__main__':
     print("Ejecutamos el main actual")
 
     # Obtenemos la lista de links y títulos en el archivo resultados_busqueda.csv
-    busqueda_eventos()
+    # busqueda_eventos()
 
     # Revisamos los links y generamos el archivo links_eventos_revisados.csv
-    revisar_links(groq_client=groq_client)
+    # revisar_links(groq_client=groq_client)
 
     # Obtenemos los links revisados
     urls_df = pd.read_csv(
@@ -40,7 +41,7 @@ if __name__ == '__main__':
         if contenido_web:
             try:
                 raw_response = extraer_datos_evento(
-                    contenido_web, client=cerebras_client)
+                    contenido_web, client=cerebras_client, modelos=MODELOS_CEREBRAS_DEFAULT)
 
                 if raw_response:
                     print("Respuesta cruda del LLM:", raw_response)

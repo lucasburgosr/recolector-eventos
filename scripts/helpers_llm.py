@@ -82,13 +82,21 @@ def llamar_llm_con_fallback(
     Return:
         Una tupla (contenido_respuesta, modelo_usado) o (None, None) si todo falla.
     """
+
+    if (prompt, client, modelos):
+        print("Llega todo correctamente a la llamada del LLM")
+
+    print(client)
+
     for model in modelos:
+        print(f"Modelo a probar: {model}")
         for attempt in range(max_retries_per_model + 1):
             try:
                 resp = client.chat.completions.create(
                     model=model,
                     messages=[{"role": "user", "content": prompt}],
                 )
+
                 content = resp.choices[0].message.content
                 print(f"✅ [OK] Modelo '{model}' respondió exitosamente.")
                 return content, model
